@@ -1,0 +1,9 @@
+{
+  "title": "Kaspersky",
+  "source": "src/**",
+  "destination": "styleguide/",
+  "builder": "kss-theme/",
+  "css": [
+    "../src/index.scss"
+  ]
+}

@@ -1,0 +1,42 @@
+// Highlight Colors
+//
+// Colors we use for higlighting states.
+//
+// $primary - #00BCFF; primary
+// $secondary - #A1CB00; secondary
+// $black - #1E1E1E; black
+// $alt-primary - #48484A;  alt primary
+// $alt-secondary - #006262;  alt secondary
+// $white - #FFF; white
+// $highlight-blue - #1460aa; primary blue
+// $gray  - #f7f9fa; gray color
+// $grey-border - #e3e4e6; grey border
+// $vtex - #F71963; vtex
+// $vtexSecond  - #134cd8;  vtex
+// $vtexSecondHover - #dbe9fd; vtex hover
+// $vtexAlert  - #ff4c4c; alert
+// $magic - #97113d; magic
+//
+// Styleguide Base.colors
+
+$primary: #00BCFF;
+$secondary: #A1CB00;
+$black: #1E1E1E;
+$alt-primary: #48484A;
+$alt-secondary: #006262;
+$white: #FFF;
+
+$vtex: #F71963;
+$vtexSecond : #134cd8;
+$vtexSecondHover: #dbe9fd;
+$vtexAlert : #ff4c4c;
+$magic: #97113d;
+
+:root{
+  --primary: #00BCFF;
+  --secondary: #A1CB00;
+  --black: #1E1E1E;
+  --alt-primary: #48484A;
+  --alt-secondary: #006262;
+  --white: #FFF;
+}

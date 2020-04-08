@@ -1,9 +1,7 @@
 import React from 'react';
+import './theme.scss';
 
-export { Button } from './components/button';
-export { ThemeExperimentality } from './themes/experimentality';
-
-class Theme extends React.Component {
+class ThemeExperimentality extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -15,4 +13,4 @@ class Theme extends React.Component {
     );
   }
 }
-export default Theme;
+export default ThemeExperimentality;

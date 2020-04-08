@@ -1,0 +1,37 @@
+// Button
+//
+// Button stylee.
+//
+// Markup:
+// <input type="button" class="x-button {{modifier_class}}" value="Button" />
+// <button class="x-button{{modifier_class}}" > Button </button>
+//
+// .blue-theme - A blue button.
+// .alert-theme - Alert Theme
+//
+// Styleguide Components.button
+
+.x-button {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  border-width: 0.125rem;
+  margin: 0 0.5rem;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  &:hover {
+  }
+  &.blue-theme {
+    color: #fff;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.alert-theme {
+    color: #fff;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
