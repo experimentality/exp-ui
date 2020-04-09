@@ -26,3 +26,16 @@
 .x-button.x-button-disabled, .x-button[disabled] {
   background-color: #999;
 }
+
+.x-h1, .x-h2, .x-h3, .x-h4, .x-h5 {
+  color: #00BCFF;
+}
+
+.x-h-alt {
+  color: #A1CB00;
+}
+
+.x-img-ovl-layer:before {
+  background: #00bcff;
+  background: linear-gradient(90deg, #00bcff 0%, #a1cb00 100%);
+}

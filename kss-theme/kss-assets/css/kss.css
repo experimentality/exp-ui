@@ -663,6 +663,11 @@ body {
   border: 1px solid #CCCCCC;
   padding: 1em;
   background-color: #FFF;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
+  padding: 1.5rem 1rem;
+  transition: all .3s ease;
 }
 .kss-section__content ol,
 .kss-section__content ul,
@@ -802,6 +807,11 @@ body {
   border-bottom: none;
   padding: 1em;
   background: #FDFDFD;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
+  padding: 1.2rem 1rem;
+  transition: all .3s ease;
 }
 
 .kss-modifiers__heading {
@@ -901,6 +911,10 @@ body {
 
 .kss-color .kss-parameters__name {
   display: none;
+}
+code {
+  background-color: #f1f1f1;
+  padding: 0 0.5em;
 }
 
 /*# sourceMappingURL=kss.css.map */

@@ -1,0 +1,45 @@
+/*
+ Headline
+
+ class to respect title `.x-h[ number ]` for example `.x-h1`
+
+ Markup:
+ <h1 class="x-h1 {{modifier_class}}"> Title H1 </h1>
+  <h2 class="x-h2 {{modifier_class}}"> Title H2 </h2>
+   <h3 class="x-h3 {{modifier_class}}"> Title H3 </h3>
+    <h4 class="x-h4 {{modifier_class}}"> Title H4 </h4>
+     <h5 class="x-h5 {{modifier_class}}"> Title H5 </h5>
+
+ .x-h-alt - a Second color.
+      
+ Styleguide Paragraphs.Headlines
+ */
+.x-title {
+  font-weight: bold;
+  margin: 0.65em 0;
+}
+
+.x-h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  @extend .x-title;
+}
+.x-h2{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  @extend .x-title;
+}
+
+.x-h3{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  @extend .x-title;
+}
+.x-h4{
+  font-size: 1.4rem;
+  @extend .x-title;
+}
+.x-h5{
+  font-size: 1.2rem;
+  @extend .x-title;
+}

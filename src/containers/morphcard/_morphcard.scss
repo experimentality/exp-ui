@@ -1,0 +1,54 @@
+/*
+ Morph Card 
+
+ Markup:
+ <div class="x-card-morph">
+  <h3> Card </h3> 
+ </div>
+
+
+ Styleguide Containers.1
+ */
+.x-card-morph{
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
+  padding: 1.2rem .5rem;
+  transition: all .3s ease;
+  &:hover{
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.9);
+  }
+}
+
+/*
+ Morph Card + Grid
+
+ Markup:
+ <div class="x-grid-row x-tx-cnt">
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3"> Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button"> Read </button>
+      </div>
+    </div>
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3 x-h-alt"> Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button x-button-alt"> Read </button>
+      </div>
+    </div>
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3" > Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button"> Read </button>
+      </div>
+    </div>
+ </div>
+
+
+
+ Styleguide Containers.2
+ */

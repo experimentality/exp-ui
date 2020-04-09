@@ -51,14 +51,26 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-layout.html">
+            <a class="" href="section-containers.html">
               <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Containers</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-layout.html">
+              <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Layout</span>
             </a>
           </li>
           <li class="kss-nav__item">
+            <a class="" href="section-paragraphs.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Paragraphs</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
             <a class="" href="section-specificity.html">
-              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__ref">6</span>
               <span class="kss-nav__name">Specificity</span>
             </a>
           </li>
@@ -97,44 +109,98 @@
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><input type="button" class="x-button [modifier class]" value="Button → " />
-<button class="x-button [modifier class]" > Button → </button>
-<a href="#" class="x-button [modifier class]" > Button → </a></div>
+                <div class="kss-modifiers__example"> <div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <button class="x-button [modifier class]" >
+       Button →
+     </button>
+   </div>
+   <div class="x-grid-col-50">
+     <a href="#" class="x-button [modifier class]" >
+       Button →
+     </a>
+   </div>
+ </div></div>
 
                   <article class="kss-modifiers__modifier">
                     <h2 class="kss-modifiers__name">.x-button-alt</h2>
                     <p class="kss-modifiers__description">A blue button.</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-alt" value="Button → " />
-<button class="x-button x-button-alt" > Button → </button>
-<a href="#" class="x-button x-button-alt" > Button → </a></div>
+                    <div class="kss-modifiers__example"> <div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <button class="x-button x-button-alt" >
+       Button →
+     </button>
+   </div>
+   <div class="x-grid-col-50">
+     <a href="#" class="x-button x-button-alt" >
+       Button →
+     </a>
+   </div>
+ </div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
                     <h2 class="kss-modifiers__name">.x-button-black</h2>
                     <p class="kss-modifiers__description">Black Theme.</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-black" value="Button → " />
-<button class="x-button x-button-black" > Button → </button>
-<a href="#" class="x-button x-button-black" > Button → </a></div>
+                    <div class="kss-modifiers__example"> <div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <button class="x-button x-button-black" >
+       Button →
+     </button>
+   </div>
+   <div class="x-grid-col-50">
+     <a href="#" class="x-button x-button-black" >
+       Button →
+     </a>
+   </div>
+ </div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
                     <h2 class="kss-modifiers__name">.x-button-alert</h2>
                     <p class="kss-modifiers__description">Alert Theme</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-alert" value="Button → " />
-<button class="x-button x-button-alert" > Button → </button>
-<a href="#" class="x-button x-button-alert" > Button → </a></div>
+                    <div class="kss-modifiers__example"> <div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <button class="x-button x-button-alert" >
+       Button →
+     </button>
+   </div>
+   <div class="x-grid-col-50">
+     <a href="#" class="x-button x-button-alert" >
+       Button →
+     </a>
+   </div>
+ </div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
                     <h2 class="kss-modifiers__name">.x-button-disabled</h2>
                     <p class="kss-modifiers__description">Disabled Theme</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-disabled" value="Button → " />
-<button class="x-button x-button-disabled" > Button → </button>
-<a href="#" class="x-button x-button-disabled" > Button → </a></div>
+                    <div class="kss-modifiers__example"> <div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <button class="x-button x-button-disabled" >
+       Button →
+     </button>
+   </div>
+   <div class="x-grid-col-50">
+     <a href="#" class="x-button x-button-disabled" >
+       Button →
+     </a>
+   </div>
+ </div></div>
                   </article>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;x-button [modifier class]&quot; value&#x3D;&quot;Button → &quot; /&gt;
-&lt;button class&#x3D;&quot;x-button [modifier class]&quot; &gt; Button → &lt;/button&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;x-button [modifier class]&quot; &gt; Button → &lt;/a&gt;</code></pre>
+                  <pre><code class="language-markup"> &lt;div class&#x3D;&quot;x-grid-row&quot;&gt;
+   &lt;div class&#x3D;&quot;x-grid-col-50&quot;&gt;
+     &lt;button class&#x3D;&quot;x-button [modifier class]&quot; &gt;
+       Button →
+     &lt;/button&gt;
+   &lt;/div&gt;
+   &lt;div class&#x3D;&quot;x-grid-col-50&quot;&gt;
+     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;x-button [modifier class]&quot; &gt;
+       Button →
+     &lt;/a&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
                 </article>
 
             </header>

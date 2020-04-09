@@ -1,18 +1,29 @@
-// Button
-//
-// Button style & normalize.
-//
-// Markup:
-// <input type="button" class="x-button {{modifier_class}}" value="Button → " />
-// <button class="x-button {{modifier_class}}" > Button → </button>
-// <a href="#" class="x-button {{modifier_class}}" > Button → </a>
-//
-// .x-button-alt - A blue button.
-// .x-button-black - Black Theme.
-// .x-button-alert - Alert Theme
-// .x-button-disabled - Disabled Theme
-//
-// Styleguide Components.1
+/*
+ Button
+
+ Button style & normalize.
+
+ Markup:
+  <div class="x-grid-row">
+    <div class="x-grid-col-50">
+      <button class="x-button {{modifier_class}}" > 
+        Button → 
+      </button>
+    </div>
+    <div class="x-grid-col-50">
+      <a href="#" class="x-button {{modifier_class}}" > 
+        Button → 
+      </a>
+    </div>
+  </div>
+
+ .x-button-alt - A blue button.
+ .x-button-black - Black Theme.
+ .x-button-alert - Alert Theme
+ .x-button-disabled - Disabled Theme
+
+ Styleguide Components.1
+*/
 
 .x-button {
   display: inline-block;
@@ -28,6 +39,8 @@
   text-decoration: none;
   vertical-align: middle;
   line-height: 2.5rem;
+  width: 80%;
+  text-align: center;
   &.x-button-alt{
     // styles of theme
   }

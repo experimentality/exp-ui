@@ -74,3 +74,17 @@ $magic: #97113d;
     background-color: $gray;
   }
 }
+
+// Headlines colors
+.x-h1, .x-h2, .x-h3, .x-h4, .x-h5{
+  color: $primary;
+}
+.x-h-alt{
+  color: $secondary;
+}
+
+// Overlay Image
+.x-img-ovl-layer:before{
+  background: rgb(0,188,255);
+  background: linear-gradient(90deg, rgba(0,188,255,1) 0%, rgba(161,203,0,1) 100%);
+}

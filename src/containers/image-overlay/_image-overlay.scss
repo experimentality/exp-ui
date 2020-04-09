@@ -1,0 +1,67 @@
+/*
+ Image Overlay
+
+ Container image with over element
+
+ Markup:
+ <div class="x-img-ovl">
+    <!-- img simple element -->
+    <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+    <!-- over element -->
+    <div class="x-img-ovl-layer">
+      <h2> VTEX </h2>
+    </div>
+ </div>
+
+
+ Styleguide Containers.3
+ */
+ .x-img-ovl{
+   position: relative;
+   background-color: #333;
+   overflow: hidden;
+  img{
+    filter: blur(0);
+    display: block;
+    transition: all .3s ease;
+    width: 100%;
+    transform: scale(1);
+  }
+  &-layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #FFF;
+    opacity: 0;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      opacity: 0.4;
+      z-index: -1;
+    }
+  }
+  &:hover{
+    .x-img-ovl-layer{
+      opacity: 1;
+    }
+    img{
+      filter: blur(1px);
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+}

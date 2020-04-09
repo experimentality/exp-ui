@@ -1,4 +1,30 @@
 @charset "UTF-8";
+/*
+ Button
+
+ Button style & normalize.
+
+ Markup:
+  <div class="x-grid-row">
+    <div class="x-grid-col-50">
+      <button class="x-button {{modifier_class}}" > 
+        Button → 
+      </button>
+    </div>
+    <div class="x-grid-col-50">
+      <a href="#" class="x-button {{modifier_class}}" > 
+        Button → 
+      </a>
+    </div>
+  </div>
+
+ .x-button-alt - A blue button.
+ .x-button-black - Black Theme.
+ .x-button-alert - Alert Theme
+ .x-button-disabled - Disabled Theme
+
+ Styleguide Components.1
+*/
 .x-button {
   display: inline-block;
   font-weight: bold;
@@ -13,6 +39,8 @@
   text-decoration: none;
   vertical-align: middle;
   line-height: 2.5rem;
+  width: 80%;
+  text-align: center;
 }
 .x-button.x-button-disabled, .x-button[disabled] {
   cursor: no-drop;
@@ -492,6 +520,11 @@ body {
   outline: none;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -896,8 +929,17 @@ th {
   background-color: #999;
 }
 
-.x-tx-cnt {
-  text-align: center;
+.x-h1, .x-h2, .x-h3, .x-h4, .x-h5 {
+  color: #00BCFF;
+}
+
+.x-h-alt {
+  color: #A1CB00;
+}
+
+.x-img-ovl-layer:before {
+  background: #00bcff;
+  background: linear-gradient(90deg, #00bcff 0%, #a1cb00 100%);
 }
 
 .x-br-1 {
@@ -916,6 +958,188 @@ th {
   padding: 0.5rem;
 }
 
+.x-pd-card {
+  padding: 1.2rem 0.5rem;
+}
+
 .x-bg-overlay {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*
+ Morph Card 
+
+ Markup:
+ <div class="x-card-morph">
+  <h3> Card </h3> 
+ </div>
+
+
+ Styleguide Containers.1
+ */
+.x-card-morph {
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
+  padding: 1.2rem 0.5rem;
+  transition: all 0.3s ease;
+}
+.x-card-morph:hover {
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.9);
+}
+
+/*
+ Morph Card + Grid
+
+ Markup:
+ <div class="x-grid-row x-tx-cnt">
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3"> Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button"> Read </button>
+      </div>
+    </div>
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3 x-h-alt"> Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button x-button-alt"> Read </button>
+      </div>
+    </div>
+    <div class="x-grid-col-33 x-pd-small">
+      <div class="x-card-morph">
+        <h3 class="x-h3" > Card </h3> 
+        <p> Morph Style </p>
+        <button class="x-button"> Read </button>
+      </div>
+    </div>
+ </div>
+
+
+
+ Styleguide Containers.2
+ */
+/*
+ Image Overlay
+
+ Container image with over element
+
+ Markup:
+ <div class="x-img-ovl">
+    <!-- img simple element -->
+    <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+    <!-- over element -->
+    <div class="x-img-ovl-layer">
+      <h2> VTEX </h2>
+    </div>
+ </div>
+
+
+ Styleguide Containers.3
+ */
+.x-img-ovl {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+.x-img-ovl img {
+  filter: blur(0);
+  display: block;
+  transition: all 0.3s ease;
+  width: 100%;
+  transform: scale(1);
+}
+.x-img-ovl-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #FFF;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.x-img-ovl-layer:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+.x-img-ovl:hover .x-img-ovl-layer {
+  opacity: 1;
+}
+.x-img-ovl:hover img {
+  filter: blur(1px);
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+/*
+ Headline
+
+ class to respect title `.x-h[ number ]` for example `.x-h1`
+
+ Markup:
+ <h1 class="x-h1 {{modifier_class}}"> Title H1 </h1>
+  <h2 class="x-h2 {{modifier_class}}"> Title H2 </h2>
+   <h3 class="x-h3 {{modifier_class}}"> Title H3 </h3>
+    <h4 class="x-h4 {{modifier_class}}"> Title H4 </h4>
+     <h5 class="x-h5 {{modifier_class}}"> Title H5 </h5>
+
+ .x-h-alt - a Second color.
+
+ Styleguide Paragraphs.Headlines
+ */
+.x-title, .x-h5, .x-h4, .x-h3, .x-h2, .x-h1 {
+  font-weight: bold;
+  margin: 0.65em 0;
+}
+
+.x-h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.x-h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.x-h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.x-h4 {
+  font-size: 1.4rem;
+}
+
+.x-h5 {
+  font-size: 1.2rem;
+}
+
+/*
+ Central Text
+
+ for central text re-use class `.x-tx-cnt`
+
+ Markup:
+ <p class="x-tx-cnt"> Text Align center </p>
+
+ Styleguide Paragraphs.CentralText
+ */
+.x-tx-cnt {
+  text-align: center;
 }
