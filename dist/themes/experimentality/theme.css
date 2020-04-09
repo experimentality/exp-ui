@@ -1,1 +1,1 @@
-:root{--primary: #00BCFF;--secondary: #A1CB00;--black: #1E1E1E;--alt-primary: #48484A;--alt-secondary: #006262;--white: #FFF}
+:root{--primary: #00BCFF;--secondary: #A1CB00;--black: #1E1E1E;--alt-primary: #48484A;--alt-secondary: #006262;--white: #FFF}.x-button{background-color:#00bcff;color:#fff}.x-button:hover{color:#fff}.x-button.x-button-alt{background-color:#a1cb00}.x-button.x-button-black{background-color:#999}.x-button.x-button-alert{background-color:#ff4c4c}.x-button.x-button-disabled,.x-button[disabled]{background-color:#999}
