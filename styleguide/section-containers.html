@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="generator" content="kss-node">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
@@ -65,13 +66,31 @@
                     <li class="kss-nav__item ">
                       <a href="section-containers.html#kssref-containers-2">
                         <span class="kss-nav__ref">3.2</span>
-                        <span class="kss-nav__name">Morph Card + Grid</span>
+                        <span class="kss-nav__name">Morph Card + Padding + Grid</span>
                       </a>
                     </li>
                     <li class="kss-nav__item ">
                       <a href="section-containers.html#kssref-containers-3">
                         <span class="kss-nav__ref">3.3</span>
                         <span class="kss-nav__name">Image Overlay</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-containers.html#kssref-containers-4">
+                        <span class="kss-nav__ref">3.4</span>
+                        <span class="kss-nav__name">Morph Card + Image Overlay</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-containers.html#kssref-containers-5">
+                        <span class="kss-nav__ref">3.5</span>
+                        <span class="kss-nav__name">Fly Border Container</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-containers.html#kssref-containers-6">
+                        <span class="kss-nav__ref">3.6</span>
+                        <span class="kss-nav__name">Surf Container</span>
                       </a>
                     </li>
                 </ul>
@@ -110,7 +129,7 @@
             <header class="kss-section kss-section--depth-1" id="kssref-containers">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/containers.scss</span>, line <span>4</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/containers.scss</span>, line <span>6</span></p>
 
               <a class="kss-section__permalink" href="#kssref-containers">
                 <h1 class="kss-section__item kss-section__item--depth-1">
@@ -144,14 +163,14 @@
 
 
                 <div class="kss-modifiers__example"><div class="x-card-morph">
- <h3> Card </h3>
+ <h3 class="x-tx-cnt"> Card </h3>
 </div></div>
 
               </article>
 
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
- &lt;h3&gt; Card &lt;/h3&gt;
+ &lt;h3 class&#x3D;&quot;x-tx-cnt&quot;&gt; Card &lt;/h3&gt;
 &lt;/div&gt;</code></pre>
                 </article>
 
@@ -164,7 +183,7 @@
               <a class="kss-section__permalink" href="#kssref-containers-2">
                 <h2 class="kss-section__item kss-section__item--depth-2">
                   <span class="kss-section__ref">3.2</span>
-                  <span class="kss-section__name">Morph Card + Grid</span>
+                  <span class="kss-section__name">Morph Card + Padding + Grid</span>
                 </h2>
               </a>
 
@@ -175,54 +194,44 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><div class="x-grid-row x-tx-cnt">
+                <div class="kss-modifiers__example"><div class="x-grid-row x-tx-cnt ">
    <div class="x-grid-col-33 x-pd-small">
-     <div class="x-card-morph">
+     <div class="x-card-morph x-pd-card">
        <h3 class="x-h3"> Card </h3>
-       <p> Morph Style </p>
+       <p > Morph Style </p>
        <button class="x-button"> Read </button>
      </div>
    </div>
    <div class="x-grid-col-33 x-pd-small">
-     <div class="x-card-morph">
+     <div class="x-card-morph x-pd-card">
        <h3 class="x-h3 x-h-alt"> Card </h3>
-       <p> Morph Style </p>
+       <p > Morph Style </p>
        <button class="x-button x-button-alt"> Read </button>
      </div>
    </div>
    <div class="x-grid-col-33 x-pd-small">
-     <div class="x-card-morph">
-       <h3 class="x-h3" > Card </h3>
-       <p> Morph Style </p>
-       <button class="x-button"> Read </button>
-     </div>
    </div>
 </div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-grid-row x-tx-cnt&quot;&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-grid-row x-tx-cnt &quot;&gt;
    &lt;div class&#x3D;&quot;x-grid-col-33 x-pd-small&quot;&gt;
-     &lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
+     &lt;div class&#x3D;&quot;x-card-morph x-pd-card&quot;&gt;
        &lt;h3 class&#x3D;&quot;x-h3&quot;&gt; Card &lt;/h3&gt;
-       &lt;p&gt; Morph Style &lt;/p&gt;
+       &lt;p &gt; Morph Style &lt;/p&gt;
        &lt;button class&#x3D;&quot;x-button&quot;&gt; Read &lt;/button&gt;
      &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class&#x3D;&quot;x-grid-col-33 x-pd-small&quot;&gt;
-     &lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
+     &lt;div class&#x3D;&quot;x-card-morph x-pd-card&quot;&gt;
        &lt;h3 class&#x3D;&quot;x-h3 x-h-alt&quot;&gt; Card &lt;/h3&gt;
-       &lt;p&gt; Morph Style &lt;/p&gt;
+       &lt;p &gt; Morph Style &lt;/p&gt;
        &lt;button class&#x3D;&quot;x-button x-button-alt&quot;&gt; Read &lt;/button&gt;
      &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class&#x3D;&quot;x-grid-col-33 x-pd-small&quot;&gt;
-     &lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
-       &lt;h3 class&#x3D;&quot;x-h3&quot; &gt; Card &lt;/h3&gt;
-       &lt;p&gt; Morph Style &lt;/p&gt;
-       &lt;button class&#x3D;&quot;x-button&quot;&gt; Read &lt;/button&gt;
-     &lt;/div&gt;
    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </article>
@@ -251,10 +260,15 @@
 
                 <div class="kss-modifiers__example"><div class="x-img-ovl">
    <!-- img simple element -->
-   <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+   <img src="/kss-assets/img/banner-vtex.jpg" alt>
    <!-- over element -->
    <div class="x-img-ovl-layer">
-     <h2> VTEX </h2>
+     <div>
+       <h2 class="x-mg-small"> VTEX </h2>
+       <button class="x-button x-button-white" >
+         Button→
+       </button>
+     </div>
    </div>
 </div></div>
 
@@ -263,13 +277,224 @@
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-img-ovl&quot;&gt;
    &lt;!-- img simple element --&gt;
-   &lt;img src&#x3D;&quot;https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg&quot;&gt;
+   &lt;img src&#x3D;&quot;/kss-assets/img/banner-vtex.jpg&quot; alt&gt;
    &lt;!-- over element --&gt;
    &lt;div class&#x3D;&quot;x-img-ovl-layer&quot;&gt;
-     &lt;h2&gt; VTEX &lt;/h2&gt;
+     &lt;div&gt;
+       &lt;h2 class&#x3D;&quot;x-mg-small&quot;&gt; VTEX &lt;/h2&gt;
+       &lt;button class&#x3D;&quot;x-button x-button-white&quot; &gt;
+         Button→
+       &lt;/button&gt;
+     &lt;/div&gt;
    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-containers-4">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/containers/image-overlay/_image-overlay.scss</span>, line <span>74</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-containers-4">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.4</span>
+                  <span class="kss-section__name">Morph Card + Image Overlay</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"></div>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="x-grid-row x-tx-cnt">
+   <!-- GRID layout -->
+   <div class="x-grid-col-33 x-pd-small">
+     <!-- Morph Card  -->
+     <div class="x-card-morph">
+       <!-- Image Overlay  -->
+       <div class="x-img-ovl">
+         <img src="/kss-assets/img/banner-vtex.jpg" alt>
+         <div class="x-img-ovl-layer">
+           <div>
+             <h2 class="x-mg-small"> VTEX </h2>
+           </div>
+         </div>
+       </div>
+       <!-- -->
+       <div class="x-pd-card">
+         <p class="x-p-js-small"> Is a long established fact that a reader will be distracted by the
+             readable content of a page when looking at its layout. The point of using
+             Lorem Ipsum is that it... </p>
+         <button class="x-button"> Read </button>
+       </div>
+     </div>
+   </div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-grid-row x-tx-cnt&quot;&gt;
+   &lt;!-- GRID layout --&gt;
+   &lt;div class&#x3D;&quot;x-grid-col-33 x-pd-small&quot;&gt;
+     &lt;!-- Morph Card  --&gt;
+     &lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
+       &lt;!-- Image Overlay  --&gt;
+       &lt;div class&#x3D;&quot;x-img-ovl&quot;&gt;
+         &lt;img src&#x3D;&quot;/kss-assets/img/banner-vtex.jpg&quot; alt&gt;
+         &lt;div class&#x3D;&quot;x-img-ovl-layer&quot;&gt;
+           &lt;div&gt;
+             &lt;h2 class&#x3D;&quot;x-mg-small&quot;&gt; VTEX &lt;/h2&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;!-- --&gt;
+       &lt;div class&#x3D;&quot;x-pd-card&quot;&gt;
+         &lt;p class&#x3D;&quot;x-p-js-small&quot;&gt; Is a long established fact that a reader will be distracted by the
+             readable content of a page when looking at its layout. The point of using
+             Lorem Ipsum is that it... &lt;/p&gt;
+         &lt;button class&#x3D;&quot;x-button&quot;&gt; Read &lt;/button&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-containers-5">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/containers/fly-border/_fly-border.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-containers-5">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.5</span>
+                  <span class="kss-section__name">Fly Border Container</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Example</p>
+<!-- Card Layout -->
+ <div class="x-grid-row x-tx-cnt x-bg-black x-br-rd-small">
+   <!-- GRID layout -->
+   <div class="x-grid-col-33 x-pd-small">
+     <!-- Fly Border -->
+     <div class="x-fly-br">
+       <div class="x-fly-br-cnt">
+         <!-- your content -->
+         <div class="x-img-ovl">
+           <img src="/kss-assets/img/banner-vtex.jpg" alt>
+           <div class="x-img-ovl-layer">
+             <div>
+               <h2 class="x-mg-small"> VTEX </h2>
+             </div>
+           </div>
+         </div>
+         <!-- -->
+       </div>
+     </div>
+     <!-- Fly Border -->
+   </div>
+ </div>
+<p>Sintaxis</p>
+<pre class="hljs"><code class="language-markup"> &lt;!-- Fly Border --&gt;
+ &lt;div class=&quot;x-fly-br&quot;&gt;
+   &lt;div class=&quot;x-fly-br-cnt&quot;&gt;
+     &lt;!-- your content --&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+</code></pre>
+</div>
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-containers-6">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/containers/surf-container/_surf-container.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-containers-6">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.6</span>
+                  <span class="kss-section__name">Surf Container</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Example</p>
+ <div class="x-surf-cnt">
+   <!-- content -->
+   <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
+   <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+   <h3 class="x-h3"> Nuestros Colaboradores </h3>
+   <div class="x-grid-row">
+     <div class="x-grid-col-33 x-pd-small">
+       <div class="x-fly-br">
+         <div class="x-fly-br-cnt">
+           <div class="x-img-ovl">
+             <img src="/kss-assets/img/banner-vtex.jpg" alt>
+             <div class="x-img-ovl-layer">
+               <div class="x-tx-lft x-pd-small">
+                 <p> Blog/Ecommerce </p>
+                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                 <button class="x-button x-button-white"> ver articulo → </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="x-grid-col-33 x-pd-small">
+       <div class="x-fly-br">
+         <div class="x-fly-br-cnt">
+           <div class="x-img-ovl">
+             <img src="/kss-assets/img/banner-vtex.jpg" alt>
+             <div class="x-img-ovl-layer">
+               <div class="x-tx-lft x-pd-small">
+                 <p> Blog/Ecommerce </p>
+                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                 <button class="x-button x-button-white"> ver articulo → </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="x-grid-col-33 x-pd-small">
+       <div class="x-fly-br">
+         <div class="x-fly-br-cnt">
+           <div class="x-img-ovl">
+             <img src="/kss-assets/img/banner-vtex.jpg" alt>
+             <div class="x-img-ovl-layer">
+               <div class="x-tx-lft x-pd-small">
+                 <p> Blog/Ecommerce </p>
+                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                 <button class="x-button x-button-white"> ver articulo → </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <h3 class="x-h3"> Nuestra Cultura </h3>
+   <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+   <!-- content -->
+ </div>
+<p>Sintaxis</p>
+<pre class="hljs"><code class="language-markup">&lt;div class=&quot;x-surf-cnt&quot;&gt;
+  &lt;!-- Your Content --&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+            </article>
+
 
             </section>
     </section>

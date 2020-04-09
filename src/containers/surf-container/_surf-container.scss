@@ -1,0 +1,113 @@
+/*
+ Surf Container
+
+ Example
+  <div class="x-surf-cnt">
+    <!-- content -->
+    <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
+    <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+    <h3 class="x-h3"> Nuestros Colaboradores </h3>
+    <div class="x-grid-row">
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="x-h3"> Nuestra Cultura </h3>
+    <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+    <!-- content -->
+  </div>
+
+
+ Sintaxis
+ ```markup
+<div class="x-surf-cnt">
+   <!-- Your Content -->
+</div>
+```
+
+ Styleguide Containers.6
+ */
+ .x-surf-cnt{
+  margin: 4rem 0;
+  background-color: #2f2f30;
+  color: #FFF;
+  padding: 1rem ;
+  position: relative;
+  &:before{
+    content: "";
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzJGMkYzMCIgZD0iTTUwOCwzM0gwdi00YzAsMCw1MS00OCwyNTQtMTVjMTc5LjcsMjkuMiwyNTQsMCwyNTQsMFYzM3oiLz48L3N2Zz4K');
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: block;
+    background-size: 109% auto;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: transparent;
+    top: -3.9rem;
+  }
+  &:after{
+    content: "";
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgk8cGF0aCBmaWxsPSIjMkYyRjMwIiBkPSJNNTA4LDAuNEwwLDAuNGwwLDRjMCwwLDUxLDQ4LDI1NCwxNWMxNzkuNy0yOS4yLDI1NCwwLDI1NCwwVjAuNHoiLz4KPC9zdmc+Cg==');
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: block;
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    width: 100%;
+    background-color: transparent;
+    bottom: -3.9rem;
+    background-position-x: center;
+  }
+}

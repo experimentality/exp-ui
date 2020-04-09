@@ -15,7 +15,7 @@
  Styleguide Paragraphs.Headlines
  */
 .x-title, .x-h5, .x-h4, .x-h3, .x-h2, .x-h1 {
-  font-weight: bold;
+  font-weight: 700;
   margin: 0.65em 0;
 }
 
@@ -25,12 +25,12 @@
 }
 
 .x-h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
 }
 
 .x-h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -54,4 +54,24 @@
  */
 .x-tx-cnt {
   text-align: center;
+}
+
+/*
+ Left Text
+
+ for Left text re-use class `.x-tx-cnt`
+
+ Markup:
+ <p class="x-tx-cnt"> Text Align center </p>
+
+ Styleguide Paragraphs.LeftText
+ */
+.x-tx-lft {
+  text-align: left;
+}
+
+.x-p-js-small {
+  text-align: justify;
+  padding: 0.5rem;
+  color: #757575;
 }

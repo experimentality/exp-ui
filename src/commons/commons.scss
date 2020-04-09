@@ -16,7 +16,6 @@
 }
 
 // paddings
-
 .x-pd-small{
   padding: .5rem;
 }
@@ -25,8 +24,26 @@
 }
 
 
-// backgrounds
+// Margins
+.x-mg-small{
+  margin: .5rem;
+}
+.x-mg-card{
+  margin: 1.2rem .5rem;
+}
 
+
+
+// backgrounds
 .x-bg-overlay{
   background-color: rgba(0,0,0,0.1);
+}
+.x-bg-black{
+  background-color: #333333;
+}
+
+// Color Text
+
+p.x-white-text, div.x-white-text, article.x-white-text{
+  color: #FFF;
 }

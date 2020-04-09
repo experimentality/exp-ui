@@ -23,6 +23,14 @@
 .x-button.x-button-alert {
   background-color: #ff4c4c;
 }
+.x-button.x-button-white {
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.x-button.x-button-white:hover {
+  background-color: rgba(250, 250, 250, 0.5);
+}
 .x-button.x-button-disabled, .x-button[disabled] {
   background-color: #999;
 }

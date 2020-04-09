@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="generator" content="kss-node">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
@@ -110,10 +111,15 @@
 
                 <div class="kss-modifiers__example"><div class="x-img-ovl">
    <!-- img simple element -->
-   <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+   <img src="/kss-assets/img/banner-vtex.jpg" alt>
    <!-- over element -->
    <div class="x-img-ovl-layer">
-     <h2> VTEX </h2>
+     <div>
+       <h2 class="x-mg-small"> VTEX </h2>
+       <button class="x-button x-button-white" >
+         Button→
+       </button>
+     </div>
    </div>
 </div></div>
 
@@ -122,10 +128,15 @@
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-img-ovl&quot;&gt;
    &lt;!-- img simple element --&gt;
-   &lt;img src&#x3D;&quot;https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg&quot;&gt;
+   &lt;img src&#x3D;&quot;/kss-assets/img/banner-vtex.jpg&quot; alt&gt;
    &lt;!-- over element --&gt;
    &lt;div class&#x3D;&quot;x-img-ovl-layer&quot;&gt;
-     &lt;h2&gt; VTEX &lt;/h2&gt;
+     &lt;div&gt;
+       &lt;h2 class&#x3D;&quot;x-mg-small&quot;&gt; VTEX &lt;/h2&gt;
+       &lt;button class&#x3D;&quot;x-button x-button-white&quot; &gt;
+         Button→
+       &lt;/button&gt;
+     &lt;/div&gt;
    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </article>

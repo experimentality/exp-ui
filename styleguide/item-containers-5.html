@@ -88,20 +88,48 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-brandlines-1">
+            <header class="kss-section kss-section--depth-2" id="kssref-containers-5">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/themes/experimentality/theme.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/fly-border/_fly-border.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-brandlines-1">
+              <a class="kss-section__permalink" href="#kssref-containers-5">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">1.1</span>
-                  <span class="kss-section__name">Import variables SASS/SCSS</span>
+                  <span class="kss-section__ref">3.5</span>
+                  <span class="kss-section__name">Fly Border Container</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>import variables colors from theme on <br></p>
-<pre class="hljs"><code class="language-css"> <span class="hljs-keyword">@import</span> <span class="hljs-string">'exp-ui/dist/theme/experimentality'</span>;
+                <div class="kss-section__description"><p>Example</p>
+<!-- Card Layout -->
+ <div class="x-grid-row x-tx-cnt x-bg-black x-br-rd-small">
+   <!-- GRID layout -->
+   <div class="x-grid-col-33 x-pd-small">
+     <!-- Fly Border -->
+     <div class="x-fly-br">
+       <div class="x-fly-br-cnt">
+         <!-- your content -->
+         <div class="x-img-ovl">
+           <img src="/kss-assets/img/banner-vtex.jpg" alt>
+           <div class="x-img-ovl-layer">
+             <div>
+               <h2 class="x-mg-small"> VTEX </h2>
+             </div>
+           </div>
+         </div>
+         <!-- -->
+       </div>
+     </div>
+     <!-- Fly Border -->
+   </div>
+ </div>
+<p>Sintaxis</p>
+<pre class="hljs"><code class="language-markup"> &lt;!-- Fly Border --&gt;
+ &lt;div class=&quot;x-fly-br&quot;&gt;
+   &lt;div class=&quot;x-fly-br-cnt&quot;&gt;
+     &lt;!-- your content --&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
 </code></pre>
 </div>
 

@@ -20,6 +20,7 @@
  .x-button-alt - A blue button.
  .x-button-black - Black Theme.
  .x-button-alert - Alert Theme
+ .x-button-white - White Theme
  .x-button-disabled - Disabled Theme
 
  Styleguide Components.1
@@ -39,6 +40,7 @@
   text-decoration: none;
   vertical-align: middle;
   line-height: 2.5rem;
+  white-space: nowrap;
   width: 80%;
   text-align: center;
   &.x-button-alt{
@@ -48,6 +50,9 @@
     // styles of theme
   }
   &.x-button-alert{
+    // styles of theme
+  }
+  &.x-button-white{
     // styles of theme
   }
   &.x-button-disabled, &[disabled]{

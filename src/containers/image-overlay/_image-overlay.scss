@@ -6,10 +6,15 @@
  Markup:
  <div class="x-img-ovl">
     <!-- img simple element -->
-    <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+    <img src="/kss-assets/img/banner-vtex.jpg" alt>
     <!-- over element -->
     <div class="x-img-ovl-layer">
-      <h2> VTEX </h2>
+      <div>
+        <h2 class="x-mg-small"> VTEX </h2>
+        <button class="x-button x-button-white" > 
+          Button→ 
+        </button>
+      </div>
     </div>
  </div>
 
@@ -50,7 +55,7 @@
       bottom: 0;
       right: 0;
       top: 0;
-      opacity: 0.4;
+      opacity: 0.5;
       z-index: -1;
     }
   }
@@ -65,3 +70,39 @@
     }
   }
 }
+
+/*
+ Morph Card + Image Overlay
+
+ Markup:
+ <div class="x-grid-row x-tx-cnt">
+    <!-- GRID layout -->
+    <div class="x-grid-col-33 x-pd-small">
+      <!-- Morph Card  -->
+      <div class="x-card-morph">
+        <!-- Image Overlay  -->
+        <div class="x-img-ovl">
+          <img src="/kss-assets/img/banner-vtex.jpg" alt>
+          <div class="x-img-ovl-layer">
+            <div>
+              <h2 class="x-mg-small"> VTEX </h2>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="x-pd-card">
+          <p class="x-p-js-small"> Is a long established fact that a reader will be distracted by the 
+              readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it... </p>
+          <button class="x-button"> Read </button>
+        </div>
+      </div>
+    </div>
+
+ </div>
+
+
+
+ Styleguide Containers.4
+ */
+

@@ -15,7 +15,7 @@
  Styleguide Paragraphs.Headlines
  */
 .x-title {
-  font-weight: bold;
+  font-weight: 700;
   margin: 0.65em 0;
 }
 
@@ -25,13 +25,13 @@
   @extend .x-title;
 }
 .x-h2{
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   @extend .x-title;
 }
 
 .x-h3{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   @extend .x-title;
 }

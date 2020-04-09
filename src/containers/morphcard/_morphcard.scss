@@ -3,7 +3,7 @@
 
  Markup:
  <div class="x-card-morph">
-  <h3> Card </h3> 
+  <h3 class="x-tx-cnt"> Card </h3> 
  </div>
 
 
@@ -13,38 +13,33 @@
   display: block;
   border-radius: 1rem;
   box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
-  padding: 1.2rem .5rem;
   transition: all .3s ease;
+  overflow: hidden;
   &:hover{
     box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.9);
   }
 }
 
 /*
- Morph Card + Grid
+ Morph Card + Padding + Grid
 
  Markup:
- <div class="x-grid-row x-tx-cnt">
+ <div class="x-grid-row x-tx-cnt ">
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
+      <div class="x-card-morph x-pd-card">
         <h3 class="x-h3"> Card </h3> 
-        <p> Morph Style </p>
+        <p > Morph Style </p>
         <button class="x-button"> Read </button>
       </div>
     </div>
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
+      <div class="x-card-morph x-pd-card">
         <h3 class="x-h3 x-h-alt"> Card </h3> 
-        <p> Morph Style </p>
+        <p > Morph Style </p>
         <button class="x-button x-button-alt"> Read </button>
       </div>
     </div>
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
-        <h3 class="x-h3" > Card </h3> 
-        <p> Morph Style </p>
-        <button class="x-button"> Read </button>
-      </div>
     </div>
  </div>
 

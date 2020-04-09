@@ -11,3 +11,25 @@
 .x-tx-cnt{
   text-align: center;
 }
+
+/*
+ Left Text
+
+ for Left text re-use class `.x-tx-cnt`
+
+ Markup:
+ <p class="x-tx-cnt"> Text Align center </p>
+
+ Styleguide Paragraphs.LeftText
+ */
+ .x-tx-lft{
+  text-align: left;
+}
+
+
+
+.x-p-js-small{
+  text-align: justify;
+  padding: .5rem;
+  color: #757575;
+}

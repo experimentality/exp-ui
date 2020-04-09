@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*
  Morph Card 
 
  Markup:
  <div class="x-card-morph">
-  <h3> Card </h3> 
+  <h3 class="x-tx-cnt"> Card </h3> 
  </div>
 
 
@@ -13,38 +14,33 @@
   display: block;
   border-radius: 1rem;
   box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.7);
-  padding: 1.2rem 0.5rem;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 .x-card-morph:hover {
   box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.9);
 }
 
 /*
- Morph Card + Grid
+ Morph Card + Padding + Grid
 
  Markup:
- <div class="x-grid-row x-tx-cnt">
+ <div class="x-grid-row x-tx-cnt ">
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
+      <div class="x-card-morph x-pd-card">
         <h3 class="x-h3"> Card </h3> 
-        <p> Morph Style </p>
+        <p > Morph Style </p>
         <button class="x-button"> Read </button>
       </div>
     </div>
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
+      <div class="x-card-morph x-pd-card">
         <h3 class="x-h3 x-h-alt"> Card </h3> 
-        <p> Morph Style </p>
+        <p > Morph Style </p>
         <button class="x-button x-button-alt"> Read </button>
       </div>
     </div>
     <div class="x-grid-col-33 x-pd-small">
-      <div class="x-card-morph">
-        <h3 class="x-h3" > Card </h3> 
-        <p> Morph Style </p>
-        <button class="x-button"> Read </button>
-      </div>
     </div>
  </div>
 
@@ -60,10 +56,15 @@
  Markup:
  <div class="x-img-ovl">
     <!-- img simple element -->
-    <img src="https://www.experimentality.co/wp-content/uploads/2019/05/banner-vtex.jpg">
+    <img src="/kss-assets/img/banner-vtex.jpg" alt>
     <!-- over element -->
     <div class="x-img-ovl-layer">
-      <h2> VTEX </h2>
+      <div>
+        <h2 class="x-mg-small"> VTEX </h2>
+        <button class="x-button x-button-white" > 
+          Button→ 
+        </button>
+      </div>
     </div>
  </div>
 
@@ -106,7 +107,7 @@
   bottom: 0;
   right: 0;
   top: 0;
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: -1;
 }
 .x-img-ovl:hover .x-img-ovl-layer {
@@ -116,4 +117,207 @@
   filter: blur(1px);
   opacity: 0.5;
   transform: scale(1.1);
+}
+
+/*
+ Morph Card + Image Overlay
+
+ Markup:
+ <div class="x-grid-row x-tx-cnt">
+    <!-- GRID layout -->
+    <div class="x-grid-col-33 x-pd-small">
+      <!-- Morph Card  -->
+      <div class="x-card-morph">
+        <!-- Image Overlay  -->
+        <div class="x-img-ovl">
+          <img src="/kss-assets/img/banner-vtex.jpg" alt>
+          <div class="x-img-ovl-layer">
+            <div>
+              <h2 class="x-mg-small"> VTEX </h2>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="x-pd-card">
+          <p class="x-p-js-small"> Is a long established fact that a reader will be distracted by the 
+              readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it... </p>
+          <button class="x-button"> Read </button>
+        </div>
+      </div>
+    </div>
+
+ </div>
+
+
+
+ Styleguide Containers.4
+ */
+/*
+ Fly Border Container
+
+ Example
+ <!-- Card Layout -->
+  <div class="x-grid-row x-tx-cnt x-bg-black x-br-rd-small">
+    <!-- GRID layout -->
+    <div class="x-grid-col-33 x-pd-small">
+      <!-- Fly Border -->
+      <div class="x-fly-br">
+        <div class="x-fly-br-cnt">
+          <!-- your content -->
+          <div class="x-img-ovl">
+            <img src="/kss-assets/img/banner-vtex.jpg" alt>
+            <div class="x-img-ovl-layer">
+              <div>
+                <h2 class="x-mg-small"> VTEX </h2>
+              </div>
+            </div>
+          </div>
+          <!-- -->
+        </div>
+      </div>
+      <!-- Fly Border -->
+    </div>
+  </div>
+
+
+ Sintaxis
+ ```markup
+  <!-- Fly Border -->
+  <div class="x-fly-br">
+    <div class="x-fly-br-cnt">
+      <!-- your content -->
+    </div>
+  </div>
+ ```
+
+
+ Styleguide Containers.5
+ */
+.x-fly-br {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(250, 250, 250, 0);
+  transition: border 0.3s ease;
+}
+.x-fly-br:hover {
+  border: 1px solid rgba(250, 250, 250, 0.4);
+}
+.x-fly-br-cnt {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/*
+ Surf Container
+
+ Example
+  <div class="x-surf-cnt">
+    <!-- content -->
+    <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
+    <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+    <h3 class="x-h3"> Nuestros Colaboradores </h3>
+    <div class="x-grid-row">
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="x-grid-col-33 x-pd-small">
+        <div class="x-fly-br">
+          <div class="x-fly-br-cnt">
+            <div class="x-img-ovl">
+              <img src="/kss-assets/img/banner-vtex.jpg" alt>
+              <div class="x-img-ovl-layer">
+                <div class="x-tx-lft x-pd-small">
+                  <p> Blog/Ecommerce </p>
+                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                  <button class="x-button x-button-white"> ver articulo → </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="x-h3"> Nuestra Cultura </h3>
+    <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+    <!-- content -->
+  </div>
+
+
+ Sintaxis
+ ```markup
+<div class="x-surf-cnt">
+   <!-- Your Content -->
+</div>
+```
+
+ Styleguide Containers.6
+ */
+.x-surf-cnt {
+  margin: 4rem 0;
+  background-color: #2f2f30;
+  color: #FFF;
+  padding: 1rem;
+  position: relative;
+}
+.x-surf-cnt:before {
+  content: "";
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzJGMkYzMCIgZD0iTTUwOCwzM0gwdi00YzAsMCw1MS00OCwyNTQtMTVjMTc5LjcsMjkuMiwyNTQsMCwyNTQsMFYzM3oiLz48L3N2Zz4K");
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: block;
+  background-size: 109% auto;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: transparent;
+  top: -3.9rem;
+}
+.x-surf-cnt:after {
+  content: "";
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgk8cGF0aCBmaWxsPSIjMkYyRjMwIiBkPSJNNTA4LDAuNEwwLDAuNGwwLDRjMCwwLDUxLDQ4LDI1NCwxNWMxNzkuNy0yOS4yLDI1NCwwLDI1NCwwVjAuNHoiLz4KPC9zdmc+Cg==");
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: block;
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  width: 100%;
+  background-color: transparent;
+  bottom: -3.9rem;
+  background-position-x: center;
 }
