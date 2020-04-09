@@ -1049,7 +1049,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
  Markup:
  <div class="x-img-ovl">
     <!-- img simple element -->
-    <img src="../kss-assets/img/banner-vtex.jpg" alt>
+    <img src="kss-assets/img/banner-vtex.jpg" alt>
     <!-- over element -->
     <div class="x-img-ovl-layer">
       <div>
@@ -1123,7 +1123,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
       <div class="x-card-morph">
         <!-- Image Overlay  -->
         <div class="x-img-ovl">
-          <img src="../kss-assets/img/banner-vtex.jpg" alt>
+          <img src="kss-assets/img/banner-vtex.jpg" alt>
           <div class="x-img-ovl-layer">
             <div>
               <h2 class="x-mg-small"> VTEX </h2>
@@ -1159,7 +1159,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
         <div class="x-fly-br-cnt">
           <!-- your content -->
           <div class="x-img-ovl">
-            <img src="../kss-assets/img/banner-vtex.jpg" alt>
+            <img src="kss-assets/img/banner-vtex.jpg" alt>
             <div class="x-img-ovl-layer">
               <div>
                 <h2 class="x-mg-small"> VTEX </h2>
@@ -1215,7 +1215,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
         <div class="x-fly-br">
           <div class="x-fly-br-cnt">
             <div class="x-img-ovl">
-              <img src="../kss-assets/img/banner-vtex.jpg" alt>
+              <img src="kss-assets/img/banner-vtex.jpg" alt>
               <div class="x-img-ovl-layer">
                 <div class="x-tx-lft x-pd-small">
                   <p> Blog/Ecommerce </p>
@@ -1231,7 +1231,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
         <div class="x-fly-br">
           <div class="x-fly-br-cnt">
             <div class="x-img-ovl">
-              <img src="../kss-assets/img/banner-vtex.jpg" alt>
+              <img src="kss-assets/img/banner-vtex.jpg" alt>
               <div class="x-img-ovl-layer">
                 <div class="x-tx-lft x-pd-small">
                   <p> Blog/Ecommerce </p>
@@ -1247,7 +1247,7 @@ p.x-white-text, div.x-white-text, article.x-white-text {
         <div class="x-fly-br">
           <div class="x-fly-br-cnt">
             <div class="x-img-ovl">
-              <img src="../kss-assets/img/banner-vtex.jpg" alt>
+              <img src="kss-assets/img/banner-vtex.jpg" alt>
               <div class="x-img-ovl-layer">
                 <div class="x-tx-lft x-pd-small">
                   <p> Blog/Ecommerce </p>
