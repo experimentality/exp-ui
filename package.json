@@ -6,7 +6,8 @@
     "start": "sass --watch --no-source-map ./src:./styleguide/exp-ui & onchange 'src/*.scss' -- npm run kss & live-server ./styleguide",
     "build": "sass --no-source-map --style compressed ./src:./dist",
     "kss": "kss --config kss-config.json",
-    "watch": "onchange 'src/*.scss' -- npm run kss"
+    "link": "live-server ./styleguide",
+    "watch": "onchange -v './src/**/*' -- npm run kss"
   },
   "license": "ISC",
   "style": "dist/index.css",
@@ -17,10 +18,10 @@
   },
   "devDependencies": {
     "kss": "^3.0.0",
+    "live-server": "^1.2.0",
     "michelangelo": "^0.8.0",
     "onchange": "^6.1.0",
     "parcel-bundler": "^1.12.4",
-    "live-server": "^1.2.0",
     "sass": "^1.14.3"
   }
 }
