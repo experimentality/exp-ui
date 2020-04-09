@@ -1,7 +1,7 @@
 {
-  "name": "exp-ui",
+  "name": "@experimentality/exp-ui",
   "description": "CSS framework, User Interface of Experimentality",
-  "version": "0.2.1",
+  "version": "0.2.7",
   "private": false,
   "scripts": {
     "start": "npm run sass & npm run watch & npm run link",
@@ -13,7 +13,10 @@
   },
   "license": "ISC",
   "style": "dist/index.css",
-  "repository": "git@github.com:experimentality/exp-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/experimentality/exp-ui.git"
+  },
   "author": {
     "name": "Hugo Laguna",
     "email": "hugo@experimentality.co"
@@ -25,5 +28,9 @@
     "onchange": "^6.1.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.14.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/experimentality/exp-ui/issues"
+  },
+  "homepage": "https://github.com/experimentality/exp-ui#readme"
 }
