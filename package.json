@@ -1,12 +1,13 @@
 {
   "name": "exp-ui",
-  "version": "0.2.0",
+  "description": "CSS framework, User Interface of Experimentality",
+  "version": "0.2.1",
   "private": false,
   "scripts": {
     "start": "npm run sass & npm run watch & npm run link",
     "build": "sass --no-source-map --style compressed ./src:./dist",
     "kss": "kss --config kss-config.json",
-    "sass" : "sass --watch --no-source-map ./src:./styleguide/exp-ui",
+    "sass": "sass --watch --no-source-map ./src:./styleguide/exp-ui",
     "link": "live-server ./styleguide",
     "watch": "onchange -v './src/**/*' -- npm run kss"
   },
