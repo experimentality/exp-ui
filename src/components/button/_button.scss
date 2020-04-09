@@ -4,12 +4,12 @@
 //
 // Markup:
 // <input type="button" class="x-button {{modifier_class}}" value="Button" />
-// <button class="x-button{{modifier_class}}" > Button </button>
+// <button class="x-button {{modifier_class}}" > Button </button>
 //
-// .blue-theme - A blue button.
-// .alert-theme - Alert Theme
+// .x-alt - A blue button.
+// .x-alert - Alert Theme
 //
-// Styleguide Components.button
+// Styleguide Components.1
 
 .x-button {
   display: inline-block;

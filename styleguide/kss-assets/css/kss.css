@@ -632,7 +632,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   padding-top: 80px;
-  background: #FFFFFF;
+  background: #f1f1f1;
   transition: opacity 0.4s ease-out;
 }
 .kss-documentation.kss-state-active {
@@ -662,6 +662,7 @@ body {
 .kss-section__content {
   border: 1px solid #CCCCCC;
   padding: 1em;
+  background-color: #FFF;
 }
 .kss-section__content ol,
 .kss-section__content ul,
@@ -788,11 +789,6 @@ body {
   text-decoration: underline;
   outline: 0;
 }
-.kss-section__description code {
-  display: inline-block;
-  padding: 2px 5px;
-  background: #F5F5F5;
-}
 
 .kss-section__source {
   margin: 0;
@@ -885,6 +881,7 @@ body {
   width: 100%;
   padding: 5px;
   background: #FFFFFF;
+  border-top: 1px solid #CCCCCC;
 }
 
 .kss-color__name {
