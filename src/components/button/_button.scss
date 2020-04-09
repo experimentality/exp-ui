@@ -1,37 +1,58 @@
 // Button
 //
-// Button style normalize.
+// Button style & normalize.
 //
 // Markup:
-// <input type="button" class="x-button {{modifier_class}}" value="Button" />
-// <button class="x-button {{modifier_class}}" > Button </button>
+// <input type="button" class="x-button {{modifier_class}}" value="Button → " />
+// <button class="x-button {{modifier_class}}" > Button → </button>
+// <a href="#" class="x-button {{modifier_class}}" > Button → </a>
 //
-// .x-alt - A blue button.
-// .x-alert - Alert Theme
+// .x-button-alt - A blue button.
+// .x-button-black - Black Theme.
+// .x-button-alert - Alert Theme
+// .x-button-disabled - Disabled Theme
 //
 // Styleguide Components.1
 
 .x-button {
   display: inline-block;
   font-weight: bold;
-  border-radius: 0.25rem;
-  border-width: 0.125rem;
+  border-radius: 1.3rem;
+  border: none;
   margin: 0 0.5rem;
   min-height: 2.5rem;
   box-sizing: border-box;
   font-size: 1rem;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 2.5rem;
+  &.x-button-alt{
+    // styles of theme
+  }
+  &.x-button-black{
+    // styles of theme
+  }
+  &.x-button-alert{
+    // styles of theme
+  }
+  &.x-button-disabled, &[disabled]{
+    // styles of theme
+    cursor: no-drop;
+    opacity: 0.5;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+  }
   &:hover {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    text-decoration: none;
   }
-  &.blue-theme {
-    color: #fff;
-    &:hover {
-      opacity: 0.9;
-    }
+  &:active {
+    box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.7);
   }
-  &.alert-theme {
-    color: #fff;
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+
 }

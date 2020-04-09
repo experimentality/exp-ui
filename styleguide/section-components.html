@@ -56,6 +56,12 @@
                         <span class="kss-nav__name">Button</span>
                       </a>
                     </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-2">
+                        <span class="kss-nav__ref">2.2</span>
+                        <span class="kss-nav__name">Input</span>
+                      </a>
+                    </li>
                 </ul>
           </li>
           <li class="kss-nav__item">
@@ -115,7 +121,7 @@ However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Button style normalize.</p>
+                <div class="kss-section__description"><p>Button style &amp; normalize.</p>
 </div>
 
             </article>
@@ -125,27 +131,113 @@ However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><input type="button" class="x-button [modifier class]" value="Button" />
-<button class="x-button [modifier class]" > Button </button></div>
+                <div class="kss-modifiers__example"><input type="button" class="x-button [modifier class]" value="Button → " />
+<button class="x-button [modifier class]" > Button → </button>
+<a href="#" class="x-button [modifier class]" > Button → </a></div>
 
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">.x-alt</h2>
+                    <h2 class="kss-modifiers__name">.x-button-alt</h2>
                     <p class="kss-modifiers__description">A blue button.</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-alt" value="Button" />
-<button class="x-button x-alt" > Button </button></div>
+                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-alt" value="Button → " />
+<button class="x-button x-button-alt" > Button → </button>
+<a href="#" class="x-button x-button-alt" > Button → </a></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">.x-alert</h2>
+                    <h2 class="kss-modifiers__name">.x-button-black</h2>
+                    <p class="kss-modifiers__description">Black Theme.</p>
+                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-black" value="Button → " />
+<button class="x-button x-button-black" > Button → </button>
+<a href="#" class="x-button x-button-black" > Button → </a></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.x-button-alert</h2>
                     <p class="kss-modifiers__description">Alert Theme</p>
-                    <div class="kss-modifiers__example"><input type="button" class="x-button x-alert" value="Button" />
-<button class="x-button x-alert" > Button </button></div>
+                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-alert" value="Button → " />
+<button class="x-button x-button-alert" > Button → </button>
+<a href="#" class="x-button x-button-alert" > Button → </a></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.x-button-disabled</h2>
+                    <p class="kss-modifiers__description">Disabled Theme</p>
+                    <div class="kss-modifiers__example"><input type="button" class="x-button x-button-disabled" value="Button → " />
+<button class="x-button x-button-disabled" > Button → </button>
+<a href="#" class="x-button x-button-disabled" > Button → </a></div>
                   </article>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;x-button [modifier class]&quot; value&#x3D;&quot;Button&quot; /&gt;
-&lt;button class&#x3D;&quot;x-button [modifier class]&quot; &gt; Button &lt;/button&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;x-button [modifier class]&quot; value&#x3D;&quot;Button → &quot; /&gt;
+&lt;button class&#x3D;&quot;x-button [modifier class]&quot; &gt; Button → &lt;/button&gt;
+&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;x-button [modifier class]&quot; &gt; Button → &lt;/a&gt;</code></pre>
                 </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-2">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/components/input/_input.scss</span>, line <span>2</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-2">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.2</span>
+                  <span class="kss-section__name">Input</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Input TEXT style.</p>
+<div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <div class="x-input-container">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" placeholder="Styliguide" />
+        <label class="x-input-message"> <!-- null message --> </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" placeholder="Styliguide" />
+        <label class="x-input-message"> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container x-input-error">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" value="Styliguide Fail" />
+        <label class="x-input-message "> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container x-input-ok">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" value="Styliguide OK" />
+        <label class="x-input-message"> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+ </div>
+<pre class="hljs"><code class="language-markup">
+ &lt;!-- Input --&gt;
+ &lt;div class=&quot;x-input-container&quot;&gt;
+     &lt;label class=&quot;x-input-title&quot;&gt; Titulo &lt;/label&gt;
+     &lt;input type=&quot;text&quot; class=&quot;x-input-text&quot; placeholder=&quot;Styliguide&quot; /&gt;
+     &lt;label class=&quot;x-input-message&quot;&gt; &lt;!-- message --&gt; &lt;/label&gt; &lt;!-- optional --&gt;
+ &lt;/div&gt;
+ &lt;!-- Input --&gt;
+
+ &lt;!-- Message Status --&gt;
+ &lt;div class=&quot;x-input-container {{ x-input-ok | x-input-error }} &quot;&gt;
+     &lt;label class=&quot;x-input-title&quot;&gt; Titulo &lt;/label&gt;
+     &lt;input type=&quot;text&quot; class=&quot;x-input-text&quot; value=&quot;Input OK&quot; /&gt;
+     &lt;label class=&quot;x-input-message &quot;&gt; * Maximo 10 caracteres &lt;/label&gt;
+ &lt;/div&gt;
+ &lt;!-- Message Status --&gt;
+
+
+</code></pre>
+</div>
+
+            </article>
+
 
             </section>
     </section>

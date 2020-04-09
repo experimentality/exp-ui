@@ -37,6 +37,11 @@
    margin: 0;
  }
  
+ *{
+  box-sizing: border-box; /* 1 */
+  margin: 0;
+  outline: none;
+ }
  /* HTML5 display definitions
     ========================================================================== */
  
@@ -477,7 +482,6 @@
  
  input[type="checkbox"],
  input[type="radio"] {
-   box-sizing: border-box; /* 1 */
    padding: 0; /* 2 */
    @if $legacy_browser_support {
      *height: 13px; /* 3 */

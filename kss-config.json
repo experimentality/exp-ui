@@ -1,5 +1,5 @@
 {
-  "title": "exp-ui",
+  "title": "@exp-ui",
   "source": "src/**",
   "destination": "styleguide/",
   "builder": "kss-theme/",

@@ -45,24 +45,10 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-components.html">
+            <a class="" href="section-components.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Components</span>
             </a>
-                <ul class="kss-nav__subnav">
-                    <li class="kss-nav__item ">
-                      <a href="section-components.html#kssref-components-1">
-                        <span class="kss-nav__ref">2.1</span>
-                        <span class="kss-nav__name">Button</span>
-                      </a>
-                    </li>
-                    <li class="kss-nav__item ">
-                      <a href="section-components.html#kssref-components-2">
-                        <span class="kss-nav__ref">2.2</span>
-                        <span class="kss-nav__name">Input</span>
-                      </a>
-                    </li>
-                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-layout.html">
@@ -89,20 +75,68 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-components">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-2">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/index.scss</span>, line <span>21</span></p>
+                <p class="kss-section__source">Source: <span>src/components/input/_input.scss</span>, line <span>2</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components">
-                <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">2</span>
-                  <span class="kss-section__name">Components</span>
-                </h1>
+              <a class="kss-section__permalink" href="#kssref-components-2">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.2</span>
+                  <span class="kss-section__name">Input</span>
+                </h2>
               </a>
 
-                <div class="kss-section__description"><p>Button styles can be applied to anything with the <code>.btn</code> class applied.
-However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+                <div class="kss-section__description"><p>Input TEXT style.</p>
+<div class="x-grid-row">
+   <div class="x-grid-col-50">
+     <div class="x-input-container">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" placeholder="Styliguide" />
+        <label class="x-input-message"> <!-- null message --> </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" placeholder="Styliguide" />
+        <label class="x-input-message"> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container x-input-error">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" value="Styliguide Fail" />
+        <label class="x-input-message "> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+   <div class="x-grid-col-50">
+     <div class="x-input-container x-input-ok">
+        <label class="x-input-title"> Titulo </label>
+        <input type="text" class="x-input-text" value="Styliguide OK" />
+        <label class="x-input-message"> * Maximo 10 caracteres </label>
+     </div>
+   </div>
+ </div>
+<pre class="hljs"><code class="language-markup">
+ &lt;!-- Input --&gt;
+ &lt;div class=&quot;x-input-container&quot;&gt;
+     &lt;label class=&quot;x-input-title&quot;&gt; Titulo &lt;/label&gt;
+     &lt;input type=&quot;text&quot; class=&quot;x-input-text&quot; placeholder=&quot;Styliguide&quot; /&gt;
+     &lt;label class=&quot;x-input-message&quot;&gt; &lt;!-- message --&gt; &lt;/label&gt; &lt;!-- optional --&gt;
+ &lt;/div&gt;
+ &lt;!-- Input --&gt;
+
+ &lt;!-- Message Status --&gt;
+ &lt;div class=&quot;x-input-container {{ x-input-ok | x-input-error }} &quot;&gt;
+     &lt;label class=&quot;x-input-title&quot;&gt; Titulo &lt;/label&gt;
+     &lt;input type=&quot;text&quot; class=&quot;x-input-text&quot; value=&quot;Input OK&quot; /&gt;
+     &lt;label class=&quot;x-input-message &quot;&gt; * Maximo 10 caracteres &lt;/label&gt;
+ &lt;/div&gt;
+ &lt;!-- Message Status --&gt;
+
+
+</code></pre>
 </div>
 
             </article>

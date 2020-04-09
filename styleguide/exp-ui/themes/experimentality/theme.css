@@ -6,3 +6,23 @@
   --alt-secondary: #006262;
   --white: #FFF;
 }
+
+.x-button {
+  background-color: #00BCFF;
+  color: #FFF;
+}
+.x-button:hover {
+  color: #FFF;
+}
+.x-button.x-button-alt {
+  background-color: #A1CB00;
+}
+.x-button.x-button-black {
+  background-color: #999;
+}
+.x-button.x-button-alert {
+  background-color: #ff4c4c;
+}
+.x-button.x-button-disabled, .x-button[disabled] {
+  background-color: #999;
+}

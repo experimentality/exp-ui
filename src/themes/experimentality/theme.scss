@@ -36,6 +36,8 @@ $black: #1E1E1E;
 $alt-primary: #48484A;
 $alt-secondary: #006262;
 $white: #FFF;
+$alert: #97113d;
+$gray: #999;
 
 $vtex: #F71963;
 $vtexSecond : #134cd8;
@@ -50,4 +52,25 @@ $magic: #97113d;
   --alt-primary: #48484A;
   --alt-secondary: #006262;
   --white: #FFF;
+}
+
+// X-Button theme
+.x-button{
+  background-color: $primary;
+  color: $white;
+  &:hover{
+    color: $white;
+  }
+  &.x-button-alt{
+    background-color: $secondary;
+  }
+  &.x-button-black{
+    background-color: $gray;
+  }
+  &.x-button-alert{
+    background-color: $vtexAlert;
+  }
+  &.x-button-disabled, &[disabled]{
+    background-color: $gray;
+  }
 }
