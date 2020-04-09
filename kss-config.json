@@ -4,6 +4,6 @@
   "destination": "styleguide/",
   "builder": "kss-theme/",
   "css": [
-    "../src/index.scss"
+    "./exp-ui/index.scss"
   ]
 }

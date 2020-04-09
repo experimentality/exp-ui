@@ -1,0 +1,6 @@
+# ignore folder.
+
+/kss-theme
+/src
+/styleguide
+/node_modules

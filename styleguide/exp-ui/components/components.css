@@ -1,0 +1,22 @@
+.x-button {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  border-width: 0.125rem;
+  margin: 0 0.5rem;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.x-button.blue-theme {
+  color: #fff;
+}
+.x-button.blue-theme:hover {
+  opacity: 0.9;
+}
+.x-button.alert-theme {
+  color: #fff;
+}
+.x-button.alert-theme:hover {
+  opacity: 0.9;
+}
