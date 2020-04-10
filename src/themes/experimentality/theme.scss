@@ -15,18 +15,18 @@
 //
 // $primary - #00BCFF; Primary Color Blue
 // $secondary - #A1CB00; Secondary Color Green
-// $black - #1E1E1E; black
-// $alt-primary - #48484A;  alt primary
-// $alt-secondary - #006262;  alt secondary
-// $white - #FFF; white
-// $highlight-blue - #1460aa; primary blue
-// $gray  - #f7f9fa; gray color
-// $grey-border - #e3e4e6; grey border
-// $vtex - #F71963; vtex
-// $vtexSecond  - #134cd8;  vtex
-// $vtexSecondHover - #dbe9fd; vtex hover
-// $vtexAlert  - #ff4c4c; alert
-// $magic - #97113d; magic
+// $alt-primary - #48484A;  Primary Alternate
+// $alt-secondary - #006262;  Secondary Alternate
+// $white - #FFF; Absolute White
+// $black - #1E1E1E; Absolute Black
+// $highlight-blue - #1460aa; Highlight Blue
+// $gray  - #f7f9fa; Soft Gray
+// $grey-dark - #e3e4e6; Dark Gray
+// $vtex - #F71963; VTEX
+// $vtexSecond  - #134cd8;  VTEX Second
+// $vtexSecondHover - #dbe9fd; VTEX Hover Second 
+// $vtexAlert  - #ff4c4c; VTEX Alert
+// $magic - #97113d; MagicStore
 //
 // Styleguide Brandlines.2
 
@@ -91,8 +91,40 @@ $magic: #97113d;
   color: $secondary;
 }
 
+// backgrounds
+.x-bg-primary{
+  background-color: $primary;
+}
+.x-bg-secondary{
+  background-color: $secondary;
+}
+.x-bg-overlay{
+  background-color: rgba(0,0,0,0.1);
+}
+.x-bg-black{
+  background-color: #333;
+}
+
+// Text colors 
+p.x-bg-primary, div.x-bg-primary, article.x-bg-primary{
+  color: $primary;
+}
+p.x-bg-secondary, div.x-bg-secondary, article.x-bg-secondary{
+  color: $secondary;
+}
+
 // Overlay Image
-.x-img-ovl-layer:before{
+
+// Gradiant Primary 
+// 
+// background gradiant `x-gradiant-primary`
+//
+// Markup:
+// <div class="x-hg-5r x-gradiant-primary">
+//  </div>
+//
+// Styleguide Brandlines.3
+.x-img-ovl-layer:before, .x-img-hexa-img:before, .x-gradiant-primary{
   background: rgb(0,188,255);
   background: linear-gradient(90deg, rgba(0,188,255,1) 0%, rgba(161,203,0,1) 100%);
 }

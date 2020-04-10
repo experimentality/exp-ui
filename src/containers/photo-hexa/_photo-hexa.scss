@@ -1,0 +1,78 @@
+/*
+ Image Hexa
+
+ Container image with over element
+ Example
+<div class="x-grid-row">
+  <div class="x-grid-col-20">
+    <div class="x-img-hexa x-img-hexa-hover">
+      <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+    </div>  
+  </div>
+  <div class="x-grid-col-20">
+    <div class="x-img-hexa">
+      <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+    </div>  
+  </div>
+  <div class="x-grid-col-20">
+    <div class="x-img-hexa">
+      <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+    </div>  
+  </div>
+</div>
+
+ ```markup
+ <div class="x-img-hexa {{ x-img-hexa-hover }}"> <!-- manual hover effect -->
+    <div class="x-img-hexa-img" 
+         style="background-image:url(kss-assets/img/banner-vtex.jpg);">
+    </div>
+ </div>
+```
+
+ Styleguide Containers.6
+ */
+.x-img-hexa{
+  position: relative;
+  overflow: hidden;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  padding: .6rem;
+  &-img{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 35%;
+    background-position: center;
+    background-size: cover;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0.6;
+      transition: all .3s ease;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeCAMAAAD69YcoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFpKSk////YPp7IQAAAAJ0Uk5T/wDltzBKAAAFEElEQVR42uzd0XLUOBAF0Ov//+ktdlkglRCIR221pHMf4ym7+yCER1KKXFKYIMD7rdA3wVtGuxJxVsVdAzir2P7Vj/Hewv3qNbx/r3v/Ot7rNbzuwFkZtz9w1sbtDpzVcXsDZ33czsDZAbcvcPbA7QqcXXB7Amcf3I7A2Qm3H3D2wu0GnD64aXq7xXkLNNoAZ0PcRsDZErcNcDbFbQKcbXFbAGdj3AbA2Rp3OnA2x50MnO1xpwLnANyZjz2iy2mPziG4s2alY3CnlJCDcGe8tByF+3gpOQz36e80x+E+WlIOxH1yyeNI3MdKy6G4D5WXY3EfKTEH4z5QZo7GLS81h+MWl5vjcUtLDtzKsgO3svTArSw/cCtbCNzKNgK3spXArWwncCtbCtzKtgK3srXArWwvcCtbDNzKNgO3stXArWw3cCtbDtzKtgO3svXArWw/cCuBA7cSOHArgQO3EjhwK4EDtxI4cCuBA7cSOHArgQO3EjhwK4EDtxI4cCuBA7cSOB9+DNdd4E954Q4GzrvrmF4E/h0v3eG+eXsJ0Ajgj3jpFviGbqVv6Fb6hm6lb+hW+v7gZTLY9yevwVs1fEO30jemhsrpIQZv5fCNwVs5fPEW85obCmeHGLyVwxdvLS/d0ukBL168gncGL4dSXwx48QpevHgFL168ghcvXsGLV/DixSt48eIVvHjxCl68ePHixSt48eIVvHjxCl68eAUvXsGLF6/gxYtX8OLFK3jxCl68eAUvXryCFy9ewYsXr+DFK3jx4hW8ePEKXrx4BS9ewYsXr+DFi1fw4sUrePHixYAXr+DFi1fw4sUrePHiFbx4BS9evIIXL17Bixev4MWLFy9evIIXL17Bixev4MWLV/DiFbx48QpevHgFL168ghev4MWLV/Di3ZKXb6kuXrx4Be/TvBffOt0LL97FefmWzbyX4Vs3eL/z8q0ZvN94Dd+ywfs/L9+Swfsvr+FbNXh/8PKtGLz/8fIt0v3Oy7dGF+8jvHxLdH/w2nYbiftT9eJbp/sLL9/xur/y8h2u+4bXvvwI3Leif/qA3Md9x2t38zXcd5x/+Tm5gfsRL+BhuB/zAh6E+ztewENwf88LeADuZ7yAX8b9nBfwyzgZcA+4t3kBv4SSgfeCe4sX8G2MFNwT7pd5Ad9CSOG9j8f9Gu/hwHeazwPPOBb367yHAt9tOg8+6zjce7yHAb/SbCY88xjc+7yHAL/aZCY+e3vc13g3Bx7RXBrUsC3u67ybAo9qKo1q2Q53DO9mwCObScOatsEdx7sJ8Ogm0ri25XHH8i4OXFF8FqhxWdzxvIsCVxWdhWpdDreGdzHgymKzYM0LFZpF616kyCxc+wIFZvH6mxeXDXpoXFg26aNpUdmol4YFZbN+mhWTDXtqVEg27atJEdm4twYFZPP+Jj88B/Q48cE5o89Zf6o54W/pvDlpzjz4aL8zJ/xZ/44/1vPc15V5r0mP9D37XXDma35969O/ycz9FlXbfoOvibNXAeoIWixyzF9kqWFosoLUYZFwPEWb9c8ea7BjORotLnfZQxhH0mprpM8WzRiWZvtOnbYYX6dpt2vaawf3NZ6GW9LdTiDcJ2p5oKLfAY97TE1Pq+xxfqbvWaDrWh648Um29Y/X9T4meF1LAzc/5Lr26dv+J4ivqz1w7lzF+xJw1vjlgutaA/jX/6Xr/Y/wDhF+kxVKv5bIkrbr8C403S7Lu2Dw4l03/wgwAKxs0oDRzLTlAAAAAElFTkSuQmCC');
+    background-size: 98% 98%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+  &:hover .x-img-hexa-img:before, &.x-img-hexa-hover .x-img-hexa-img:before{
+    opacity: 0;
+  }
+}
+
+

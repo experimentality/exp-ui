@@ -4,7 +4,7 @@
  Container image with over element
 
  Markup:
- <div class="x-img-ovl">
+ <div class="x-img-ovl x-wd-50"> <!-- can add static size class x-hg-#r x-wd-#r -->
     <!-- img simple element -->
     <img src="kss-assets/img/banner-vtex.jpg" alt>
     <!-- over element -->
@@ -69,6 +69,18 @@
       transform: scale(1.1);
     }
   }
+  &[class*=x-hg-]{
+    img{
+      transform: scale(1.01) translateY(-50%);
+      top: 50%;
+      position: relative;;
+    }
+    &:hover{
+      img{
+        transform: scale(1.2) translateY(-40%);
+      }
+    }
+  }
 }
 
 /*
@@ -77,11 +89,11 @@
  Markup:
  <div class="x-grid-row x-tx-cnt">
     <!-- GRID layout -->
-    <div class="x-grid-col-33 x-pd-small">
+    <div class="x-grid-col-45 x-pd-small">
       <!-- Morph Card  -->
       <div class="x-card-morph">
         <!-- Image Overlay  -->
-        <div class="x-img-ovl">
+        <div class="x-img-ovl x-hg-8r">
           <img src="kss-assets/img/banner-vtex.jpg" alt>
           <div class="x-img-ovl-layer">
             <div>

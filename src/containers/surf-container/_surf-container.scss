@@ -1,55 +1,76 @@
 /*
- Surf Container
+ White Surf Container
 
  Example
-  <div class="x-surf-cnt">
+  <div class="x-bg-black x-surf-cnt x-surf-cnt-all ">
     <!-- content -->
-    <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
-    <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
-    <h3 class="x-h3"> Nuestros Colaboradores </h3>
-    <div class="x-grid-row">
-      <div class="x-grid-col-33 x-pd-small">
-        <div class="x-fly-br">
-          <div class="x-fly-br-cnt">
-            <div class="x-img-ovl">
-              <img src="kss-assets/img/banner-vtex.jpg" alt>
-              <div class="x-img-ovl-layer">
-                <div class="x-tx-lft x-pd-small">
-                  <p> Blog/Ecommerce </p>
-                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                  <button class="x-button x-button-white"> ver articulo → </button>
+    <div class="max-width-page">
+      <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
+      <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+      <h3 class="x-h3"> Nuestros Colaboradores </h3>
+      <div class="x-grid-row">
+        <div class="x-grid-col-20">
+          <div class="x-img-hexa">
+            <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+          </div>  
+        </div>
+        <div class="x-grid-col-20">
+          <div class="x-img-hexa">
+            <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+          </div>  
+        </div>
+        <div class="x-grid-col-20">
+          <div class="x-img-hexa">
+            <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+          </div>  
+        </div>
+      </div>
+      <h3 class="x-h3"> Nuestra Cultura </h3>
+      <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+      <div class="x-grid-row">
+        <div class="x-grid-col-33 x-pd-small">
+          <div class="x-fly-br">
+            <div class="x-fly-br-cnt">
+              <div class="x-img-ovl">
+                <img src="kss-assets/img/banner-vtex.jpg" alt>
+                <div class="x-img-ovl-layer">
+                  <div class="x-tx-lft x-pd-small">
+                    <p> Blog/Ecommerce </p>
+                    <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                    <button class="x-button x-button-white"> ver articulo → </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="x-grid-col-33 x-pd-small">
-        <div class="x-fly-br">
-          <div class="x-fly-br-cnt">
-            <div class="x-img-ovl">
-              <img src="kss-assets/img/banner-vtex.jpg" alt>
-              <div class="x-img-ovl-layer">
-                <div class="x-tx-lft x-pd-small">
-                  <p> Blog/Ecommerce </p>
-                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                  <button class="x-button x-button-white"> ver articulo → </button>
+        <div class="x-grid-col-33 x-pd-small">
+          <div class="x-fly-br">
+            <div class="x-fly-br-cnt">
+              <div class="x-img-ovl">
+                <img src="kss-assets/img/banner-vtex.jpg" alt>
+                <div class="x-img-ovl-layer">
+                  <div class="x-tx-lft x-pd-small">
+                    <p> Blog/Ecommerce </p>
+                    <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                    <button class="x-button x-button-white"> ver articulo → </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="x-grid-col-33 x-pd-small">
-        <div class="x-fly-br">
-          <div class="x-fly-br-cnt">
-            <div class="x-img-ovl">
-              <img src="kss-assets/img/banner-vtex.jpg" alt>
-              <div class="x-img-ovl-layer">
-                <div class="x-tx-lft x-pd-small">
-                  <p> Blog/Ecommerce </p>
-                  <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                  <button class="x-button x-button-white"> ver articulo → </button>
+        <div class="x-grid-col-33 x-pd-small">
+          <div class="x-fly-br">
+            <div class="x-fly-br-cnt">
+              <div class="x-img-ovl">
+                <img src="kss-assets/img/banner-vtex.jpg" alt>
+                <div class="x-img-ovl-layer">
+                  <div class="x-tx-lft x-pd-small">
+                    <p> Blog/Ecommerce </p>
+                    <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                    <button class="x-button x-button-white"> ver articulo → </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,57 +78,65 @@
         </div>
       </div>
     </div>
-    <h3 class="x-h3"> Nuestra Cultura </h3>
-    <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
     <!-- content -->
   </div>
 
+ Markup:
+  <div class="x-surf-cnt {{modifier_class}} x-gradiant-primary">
+    <!-- Your Content -->
+    <h3 class="x-tx-cnt"> Wave {{modifier_class}} </h3>
+  </div>
 
- Sintaxis
- ```markup
-<div class="x-surf-cnt">
-   <!-- Your Content -->
-</div>
-```
+ .x-surf-cnt-top - Top Wave
+ .x-surf-cnt-bottom - Bottom Wave
+ .x-surf-cnt-all - All Wave
 
- Styleguide Containers.6
+ Styleguide Containers.7
  */
  .x-surf-cnt{
-  margin: 4rem 0;
-  background-color: #2f2f30;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.3);
   color: #FFF;
-  padding: 1rem ;
   position: relative;
-  &:before{
-    content: "";
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzJGMkYzMCIgZD0iTTUwOCwzM0gwdi00YzAsMCw1MS00OCwyNTQtMTVjMTc5LjcsMjkuMiwyNTQsMCwyNTQsMFYzM3oiLz48L3N2Zz4K');
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 4rem;
-    display: block;
-    background-size: 109% auto;
-    background-position-x: left;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-color: transparent;
-    top: -3.9rem;
+  /* up wave */
+  &-all , &-top{
+    padding-top: 5vw;
+    &:before{
+      content: "";
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAABbCAMAAAD+1R06AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAACKklEQVR42uzawRHCQAwEQZN/0hQE4OJhVqrb7hB80nys6wIAAAAAAAAAAAAAAAAAAAAAgK1ePgFAOLzKC5AOr/ICpMMrvQDx8CovQDq8ygvcR+I5PunlW4AGbFL20Q0gKOxSJ7+FyQSZFeL465hW0FkVTj+X+QWlFeH46xlo0FoNjj+l+QatleD0u5p2EFsFjr+x2Qe1VeD4c1sEUFsBjr+8rQC51d/4DNgQkFsBjk+DbQG9ld/4WFgc0Fv9jc+HHQK9ld/4oFgn0Fv5jU+MzQK9Vd/46FgyEFweauH+S2MQXA6r7+4rYxBcDqzvvgM3EFwOr++q2zZQXBrqu+ewDQSXkvjuOGoDxaWovrM3FaC4FMZ38qICFJfK+I6dU4Di0hrfoWMKUFx64ztySgGKS3N7Bw4pQHLpjm/0Tx4oLtr77IBadyQXfihk8D8eKC7i+59pVQAkF24TGfyPB5ILn0DmfuOB5MI3j7nfeCC58Pfwii+KCwPh1V4kF/LhFV8UFwbCK75ILgyEV3tRXMiHV3xRXBiadpVBcRFe9UVxoSC84qu4ILzii+JCR3jVV3BBeNUXxYWW8Kqv4ILwqi+CCy3hVV/BBeGVX/QWasIrv3oLwiu/egv0hFd/9RaEV37lFigKrwDLLQiv/sotUBVeBRZbEF4FVlugLbwSrLUgvBostcCrfEmFFhBeHdZZEF4tVlhAeA8Js28HwguA8AIILwDCCyC8ANx6CzAAE43fyjj0Y0UAAAAASUVORK5CYII=');
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4vw;
+      display: block;
+      background-size: 110% 80%;
+      background-repeat: no-repeat;
+      background-position-y: top;
+      background-position-x: center;
+      background-color: transparent;
+      transform: rotateY(180deg);
+      width: 101%;
+      top: -2px;
+    }
   }
-  &:after{
-    content: "";
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MDggMzMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwOCAzMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgk8cGF0aCBmaWxsPSIjMkYyRjMwIiBkPSJNNTA4LDAuNEwwLDAuNGwwLDRjMCwwLDUxLDQ4LDI1NCwxNWMxNzkuNy0yOS4yLDI1NCwwLDI1NCwwVjAuNHoiLz4KPC9zdmc+Cg==');
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 4rem;
-    display: block;
-    background-size: 110% auto;
-    background-repeat: no-repeat;
-    background-position-y: top;
-    width: 100%;
-    background-color: transparent;
-    bottom: -3.9rem;
-    background-position-x: center;
+  /* bottom wave */
+  &-all , &-bottom{
+    padding-bottom: 5vw;
+    &:after{
+      content: "";
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAABbCAMAAAD+1R06AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAACFElEQVR42uzaQY4CMQwAweH/n+bICcFMolZkVT3BsVuwy/UCIHUZAYDwAggvAMILILwACG8wvUUmCMLL9rQqMyC8B1dWjkF4lfZSYkB4tVaIQXjVVoYB4ZVbEQbh1VsRBmaGV0k1GIRXcDUYGBZekZRgEF7FlWBgXHg1UIFBeCVXgYF54VU5BQbhlVwEGAaGV8kEGIRXcxFgmBhevRJgEF7NRYBhYnhVSX9BeEUX/YWR4ZUfHCDCK7roL8wMr86gvwiv6CK/MDO8koL+QhleIUF/IQyveiC/UIZXNNBfCMOrFMgvlOEVCOQXwvDKAvIL3wupuugvlNXdv7IagPzCr0KqLvILZXV3rqmLR3/hv0KqLvILZXX3bKbzRn/hTiBlF/2FMLrru+iWkV+4nUfVRX8hjO7S+rlc9BeetVF1QYDpmvt431wp+gsLXVRd0F/iXxnILggw8X+7ZBcEmPiPrqoLAkz83V92QYCJP4LKLggwcQdlFwSYuIGyCwpMHEDZBQUmbp/sggITd092QYKJkye7IMGKe8gKOA6QYMFNH95BgAYLbvrabgA0WHDTJ7b2IMJ62z6rTQcVltv0Ja02qLDapo9nl0GHxbZ9LbsLSiy16eNYVNBinW1fwlKCHotsOnK7BxRtNsvPPM0BIA2vKQC04TUEgDa8ZgDQhtcIAAAAAAAAAAAAAAAAAAAAAAA41FuAAQA8duTpnUTmXgAAAABJRU5ErkJggg==');
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4vw;
+      display: block;
+      background-size: 110% 80%;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      width: 101%;
+      bottom: -2px;
+    }
   }
 }

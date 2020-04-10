@@ -1,5 +1,4 @@
-/*      ExperiGrid     */
-
+/*      ExperiGrid 0.5     */
 
 .extend-max-width-page {
   max-width: calc(1rem * 90);
@@ -7,7 +6,7 @@
   text-align: center;
 }
 
-%max-width-page{
+%max-width-page {
   max-width: calc(1rem * 80);
   margin: 0 auto;
 }
@@ -18,20 +17,24 @@
 .out-react {
   @extend %max-width-page;
   display: none;
-  section{
+  section {
     width: 100%;
   }
 }
-.noDesk{
+
+// device condition
+.noDesk {
   display: none;
-  @media all and (max-width: 950px) {
-    display: inherit;
-  }
 }
-.noMobile{
+.noMobile {
   display: inherit;
-  @media all and (max-width: 950px) {
-    display: none;
+}
+@media all and (max-width: 950px) {
+  .noDesk {
+      display: inherit;
+  }
+  .noMobile {
+      display: none;
   }
 }
 
@@ -39,7 +42,7 @@
 //
 // Flex container.<br />
 // ```markup
-//  <div class="x-grid-row"> 
+//  <div class="x-grid-row">
 //    <!-- columns-containers -->
 //  </div>
 // ```
@@ -60,94 +63,96 @@
     box-sizing: border-box;
   }
 
+  // Column Box
+  //
+  // Sub container with porcent value  `x-grid-col-{porcent}` from 10% to 100%
+  // <br />
+  // <div class="x-grid-row x-tx-cnt">
+  //   <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  50% @ 100%  </div>
+  //   <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  50% @ 100%  </div>
+  // </div>
+  // <div class="x-grid-row x-tx-cnt">
+  //  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
+  //  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
+  //  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
+  // </div>
+  //
+  // Styleguide Layout.2
 
+  // Column Box Sintaxis
+  //
+  // Sub container with porcent value. <br />
+  // ```markup
+  //  <div class=" x-grid-row">
+  //    <div class=" x-grid-col-50 ">  50% @ 100%  </div>
+  //    <div class=" x-grid-col-50 ">  50% @ 100%  </div>
+  //  </div>
+  //  <div class=" x-grid-row ">
+  //    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
+  //    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
+  //    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
+  //  </div>
+  // ```
+  //
+  // Styleguide Layout.3
+  .x-grid-col-auto {
+    flex: 1 1 auto;
+  }
 
-// Column Box
-//
-// Sub container with porcent value  `x-grid-col-{porcent}` from 10% to 100%
-// <br />
-// <div class="x-grid-row x-tx-cnt"> 
-//   <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  50% @ 100%  </div>
-//   <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  50% @ 100%  </div>
-// </div>
-// <div class="x-grid-row x-tx-cnt"> 
-//  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
-//  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
-//  <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  33% @ 100%  </div>
-// </div>
-//
-// Styleguide Layout.2
-
-// Column Box Sintaxis
-//
-// Sub container with porcent value. <br />
-// ```markup
-//  <div class=" x-grid-row"> 
-//    <div class=" x-grid-col-50 ">  50% @ 100%  </div>
-//    <div class=" x-grid-col-50 ">  50% @ 100%  </div>
-//  </div>
-//  <div class=" x-grid-row "> 
-//    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
-//    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
-//    <div class=" x-grid-col-33 ">  33% @ 100%  </div>
-//  </div>
-// ```
-//
-// Styleguide Layout.3
-.x-grid-col-auto {
-  flex: 1 1 auto;
-}
-
-// Column Box XL Sizes
-//
-//  The big sizes available are: <br /><br />
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-100 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-100 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-90 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-90 </div>
-//    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small">  x-grid-col-10 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-85 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-85 </div>
-//    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small">  x-grid-col-15 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-80 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-80 </div>
-//    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small">  x-grid-col-20 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-75 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-75 </div>
-//    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-70 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-70 </div>
-//    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small">  x-grid-col-30  </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-66 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-66 </div>
-//    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-60 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-60 </div>
-//    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-55 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-55 </div>
-//    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
-//  </div>
-// 
-//
-// Styleguide Layout.4
+  // Column Box XL Sizes
+  //
+  //  The big sizes available are: <br /><br />
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-100 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-100 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-90 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-90 </div>
+  //    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small">  x-grid-col-10 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-85 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-85 </div>
+  //    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small">  x-grid-col-15 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-80 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-80 </div>
+  //    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small">  x-grid-col-20 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-75 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-75 </div>
+  //    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-70 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-70 </div>
+  //    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small">  x-grid-col-30  </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-66 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-66 </div>
+  //    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-60 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-60 </div>
+  //    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-55 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-55 </div>
+  //    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
+  //  </div>
+  //
+  //
+  // Styleguide Layout.4
   $XLsizes: 100, 90, 85, 80, 75, 70, 65, 60, 55;
 
   @each $size in $XLsizes {
     .x-grid-col-#{$size} {
-      flex: 1 1 $size*1%;
+      flex: 1 1 $size * 1%;
       //width: $size*1% ;
-      max-width: $size*1% ;
-      &:not(.responsivent){
-        @media all and (max-width: 950px) {
+      max-width: $size * 1%;
+    }
+  }
+  @media all and (max-width: 950px) {
+    @each $size in $XLsizes {
+      .x-grid-col-#{$size} {
+        &:not(.responsivent) {
           flex: 1 1 100%;
           //width: 100%;
           max-width: 100%;
@@ -161,69 +166,73 @@
     }
   }
 
-// Column Box M Sizes
-//
-// The small sizes available are: <br /><br />
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-50 </div>
-//    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-45 </div>
-//    <div class="x-grid-col-55 x-br-1 x-br-dott x-pd-small">  x-grid-col-55 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-40 </div>
-//    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small">  x-grid-col-10 </div>
-//    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
-//    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-33 </div>
-//    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33  </div>
-//    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33  </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt"> 
-//    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-30 </div>
-//    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small">  x-grid-col-20 </div>
-//    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-25 </div>
-//    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25  </div>
-//    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50  </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-20 </div>
-//    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
-//    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-15 </div>
-//    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small">  x-grid-col-15 </div>
-//    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small">  x-grid-col-30 </div>
-//    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
-//  </div>
-//  <div class="x-grid-row x-tx-cnt "> 
-//    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-10 </div>
-//    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
-//    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
-//  </div>
-// 
-//
-// Styleguide Layout.5
+  // Column Box M Sizes
+  //
+  // The small sizes available are: <br /><br />
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-50 </div>
+  //    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-45 </div>
+  //    <div class="x-grid-col-55 x-br-1 x-br-dott x-pd-small">  x-grid-col-55 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-40 </div>
+  //    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small">  x-grid-col-10 </div>
+  //    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
+  //    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-33 </div>
+  //    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33  </div>
+  //    <div class="x-grid-col-33 x-br-1 x-br-dott x-pd-small">  x-grid-col-33  </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt">
+  //    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-30 </div>
+  //    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small">  x-grid-col-20 </div>
+  //    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-25 </div>
+  //    <div class="x-grid-col-25 x-br-1 x-br-dott x-pd-small">  x-grid-col-25  </div>
+  //    <div class="x-grid-col-50 x-br-1 x-br-dott x-pd-small">  x-grid-col-50  </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-20 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-20 </div>
+  //    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
+  //    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-15 </div>
+  //    <div class="x-grid-col-15 x-br-1 x-br-dott x-pd-small">  x-grid-col-15 </div>
+  //    <div class="x-grid-col-30 x-br-1 x-br-dott x-pd-small">  x-grid-col-30 </div>
+  //    <div class="x-grid-col-40 x-br-1 x-br-dott x-pd-small">  x-grid-col-40 </div>
+  //  </div>
+  //  <div class="x-grid-row x-tx-cnt ">
+  //    <div class="x-grid-col-10 x-br-1 x-br-dott x-pd-small x-bg-overlay">  x-grid-col-10 </div>
+  //    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
+  //    <div class="x-grid-col-45 x-br-1 x-br-dott x-pd-small">  x-grid-col-45 </div>
+  //  </div>
+  //
+  //
+  // Styleguide Layout.5
   $Msizes: 50, 45, 40, 35, 30, 25, 20, 15, 10;
 
   @each $size in $Msizes {
     .x-grid-col-#{$size} {
-      flex: 1 1 $size*1%;
+      flex: 1 1 $size * 1%;
       //width: $size*1% ;
-      max-width: $size*1% ;
-      &:not(.responsivent){
-        @media all and (max-width: 950px) {
-          flex: 1 1 $size*2%;
+      max-width: $size * 1%;
+    }
+  }
+  @media all and (max-width: 950px) {
+    @each $size in $Msizes {
+      .x-grid-col-#{$size} {
+        &:not(.responsivent) {
+          flex: 1 1 $size * 2%;
           //width: $size*2% ;
-          max-width: 100% ;
+          max-width: 100%;
         }
       }
     }
@@ -231,58 +240,54 @@
 
   /* Particularidades */
 
- 
-
   .x-grid-col-33 {
     flex: 1 1 33.33%;
-    width: 33.33% ;
-    max-width: 33.33% ;
-    &:not(.responsivent){
-      @media all and (max-width: 950px) {
-        flex: 1 1 66.66%;
-        width: 66.66% ;
-        max-width: 100% ;
-      }
-    }
+    width: 33.33%;
+    max-width: 33.33%;
   }
   .x-grid-col-66 {
     flex: 1 1 66.66%;
-    width: 66.66% ;
-    max-width: 66.66% ;
-    &:not(.responsivent){
-      @media all and (max-width: 950px) {
-        flex: 1 1 100%;
-        width: 100% ;
-        max-width: 100% ;
+    width: 66.66%;
+    max-width: 66.66%;
+  }
+  @media all and (max-width: 950px) {
+    .x-grid-col-33 {
+      &:not(.responsivent) {
+        flex: 1 1 66.66%;
+        width: 66.66%;
+        max-width: 100%;
       }
     }
-  }
-
-  .x-grid-col-25:not(.responsivent){
-    @media all and (max-width: 500px) {
-      flex: 1 1 100%;
-      width: 100%;
-      max-width: 100%;
+    .x-grid-col-66 {
+      &:not(.responsivent) {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+      }
     }
-  }
 
-  .x-grid-col-20 {
-    @media all and (max-width: 950px) {
+    .x-grid-col-20 {
       & + .x-grid-col-30:not(.responsivent) {
         flex: 1 1 60%;
         width: 60%;
         max-width: 60%;
       }
     }
-  }
 
-  .x-grid-col-10 {
-    @media all and (max-width: 950px) {
+    .x-grid-col-10 {
       & + .x-grid-col-40:not(.responsivent) {
         flex: 1 1 80%;
         width: 80%;
         max-width: 80%;
       }
+    }
+  }
+  @media all and (max-width: 500px) {
+
+    .x-grid-col-25:not(.responsivent) {
+      flex: 1 1 100%;
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -6,21 +6,22 @@
  Markup:
  <p class="x-tx-cnt"> Text Align center </p>
 
- Styleguide Paragraphs.CentralText
+ Styleguide Paragraphs.1
  */
 .x-tx-cnt{
   text-align: center;
 }
 
+
 /*
  Left Text
 
- for Left text re-use class `.x-tx-cnt`
+ for Left text re-use class `.x-tx-lft`
 
  Markup:
- <p class="x-tx-cnt"> Text Align center </p>
+ <p class="x-tx-lft"> Text Align  Left </p>
 
- Styleguide Paragraphs.LeftText
+ Styleguide Paragraphs.2
  */
  .x-tx-lft{
   text-align: left;

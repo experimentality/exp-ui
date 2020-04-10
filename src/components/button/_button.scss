@@ -1,7 +1,8 @@
 /*
  Button
 
- Button style & normalize.
+ Button styles can be applied to anything with the `.x-button` class applied.
+ However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 
  Markup:
   <div class="x-grid-row">
@@ -28,18 +29,17 @@
 
 .x-button {
   display: inline-block;
-  font-weight: bold;
   border-radius: 1.3rem;
   border: none;
   margin: 0 0.5rem;
-  min-height: 2.5rem;
+  min-height: 2.2rem;
   box-sizing: border-box;
   font-size: 1rem;
   padding: 0 1rem;
   transition: all 0.3s ease;
   text-decoration: none;
   vertical-align: middle;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   white-space: nowrap;
   width: 80%;
   text-align: center;

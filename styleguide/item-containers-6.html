@@ -91,78 +91,38 @@
             <header class="kss-section kss-section--depth-2" id="kssref-containers-6">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/surf-container/_surf-container.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/photo-hexa/_photo-hexa.scss</span>, line <span>1</span></p>
 
               <a class="kss-section__permalink" href="#kssref-containers-6">
                 <h2 class="kss-section__item kss-section__item--depth-2">
                   <span class="kss-section__ref">3.6</span>
-                  <span class="kss-section__name">Surf Container</span>
+                  <span class="kss-section__name">Image Hexa</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Example</p>
- <div class="x-surf-cnt">
-   <!-- content -->
-   <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
-   <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
-   <h3 class="x-h3"> Nuestros Colaboradores </h3>
-   <div class="x-grid-row">
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
+                <div class="kss-section__description"><p>Container image with over element
+Example</p>
+<div class="x-grid-row">
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa x-img-hexa-hover">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
    </div>
-   <h3 class="x-h3"> Nuestra Cultura </h3>
-   <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
-   <!-- content -->
  </div>
-<p>Sintaxis</p>
-<pre class="hljs"><code class="language-markup">&lt;div class=&quot;x-surf-cnt&quot;&gt;
-  &lt;!-- Your Content --&gt;
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+   </div>
+ </div>
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+   </div>
+ </div>
+</div>
+<pre class="hljs"><code class="language-markup">&lt;div class=&quot;x-img-hexa {{ x-img-hexa-hover }}&quot;&gt; &lt;!-- manual hover effect --&gt;
+   &lt;div class=&quot;x-img-hexa-img&quot;
+        style=&quot;background-image:url(kss-assets/img/banner-vtex.jpg);&quot;&gt;
+   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 </div>

@@ -36,14 +36,56 @@
 
 // backgrounds
 .x-bg-overlay{
-  background-color: rgba(0,0,0,0.1);
+  // styles of theme
 }
 .x-bg-black{
-  background-color: #333333;
+  // styles of theme
+}
+.x-bg-primary{
+  // styles of theme
+}
+.x-bg-secondary{
+  // styles of theme
 }
 
 // Color Text
-
 p.x-white-text, div.x-white-text, article.x-white-text{
   color: #FFF;
+}
+p.x-bg-primary, div.x-bg-primary, article.x-bg-primary{
+  // styles of theme
+}
+p.x-bg-secondary, div.x-bg-secondary, article.x-bg-secondary{
+  // styles of theme
+}
+
+// Static sizes
+.x-hg-5r{
+  height: 5rem;
+}
+.x-hg-6r{
+  height: 6rem;
+}
+.x-hg-7r{
+  height: 7rem;
+}
+.x-hg-8r{
+  height: 8rem;
+}
+
+// Static sizes
+.x-wd-5r{
+  width: 5rem;
+}
+.x-wd-6r{
+  width: 6rem;
+}
+.x-wd-7r{
+  width: 7rem;
+}
+.x-wd-8r{
+  width: 8rem;
+}
+.x-wd-50{
+  width: 50%;
 }

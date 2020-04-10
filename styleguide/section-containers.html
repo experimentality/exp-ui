@@ -90,7 +90,13 @@
                     <li class="kss-nav__item ">
                       <a href="section-containers.html#kssref-containers-6">
                         <span class="kss-nav__ref">3.6</span>
-                        <span class="kss-nav__name">Surf Container</span>
+                        <span class="kss-nav__name">Image Hexa</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-containers.html#kssref-containers-7">
+                        <span class="kss-nav__ref">3.7</span>
+                        <span class="kss-nav__name">White Surf Container</span>
                       </a>
                     </li>
                 </ul>
@@ -129,7 +135,7 @@
             <header class="kss-section kss-section--depth-1" id="kssref-containers">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/containers.scss</span>, line <span>6</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/containers.scss</span>, line <span>7</span></p>
 
               <a class="kss-section__permalink" href="#kssref-containers">
                 <h1 class="kss-section__item kss-section__item--depth-1">
@@ -258,7 +264,7 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><div class="x-img-ovl">
+                <div class="kss-modifiers__example"><div class="x-img-ovl x-wd-50"> <!-- can add static size class x-hg-#r x-wd-#r -->
    <!-- img simple element -->
    <img src="kss-assets/img/banner-vtex.jpg" alt>
    <!-- over element -->
@@ -275,7 +281,7 @@
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-img-ovl&quot;&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-img-ovl x-wd-50&quot;&gt; &lt;!-- can add static size class x-hg-#r x-wd-#r --&gt;
    &lt;!-- img simple element --&gt;
    &lt;img src&#x3D;&quot;kss-assets/img/banner-vtex.jpg&quot; alt&gt;
    &lt;!-- over element --&gt;
@@ -294,7 +300,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-containers-4">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/image-overlay/_image-overlay.scss</span>, line <span>74</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/image-overlay/_image-overlay.scss</span>, line <span>86</span></p>
 
               <a class="kss-section__permalink" href="#kssref-containers-4">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -314,11 +320,11 @@
 
                 <div class="kss-modifiers__example"><div class="x-grid-row x-tx-cnt">
    <!-- GRID layout -->
-   <div class="x-grid-col-33 x-pd-small">
+   <div class="x-grid-col-45 x-pd-small">
      <!-- Morph Card  -->
      <div class="x-card-morph">
        <!-- Image Overlay  -->
-       <div class="x-img-ovl">
+       <div class="x-img-ovl x-hg-8r">
          <img src="kss-assets/img/banner-vtex.jpg" alt>
          <div class="x-img-ovl-layer">
            <div>
@@ -341,11 +347,11 @@
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-grid-row x-tx-cnt&quot;&gt;
    &lt;!-- GRID layout --&gt;
-   &lt;div class&#x3D;&quot;x-grid-col-33 x-pd-small&quot;&gt;
+   &lt;div class&#x3D;&quot;x-grid-col-45 x-pd-small&quot;&gt;
      &lt;!-- Morph Card  --&gt;
      &lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
        &lt;!-- Image Overlay  --&gt;
-       &lt;div class&#x3D;&quot;x-img-ovl&quot;&gt;
+       &lt;div class&#x3D;&quot;x-img-ovl x-hg-8r&quot;&gt;
          &lt;img src&#x3D;&quot;kss-assets/img/banner-vtex.jpg&quot; alt&gt;
          &lt;div class&#x3D;&quot;x-img-ovl-layer&quot;&gt;
            &lt;div&gt;
@@ -417,64 +423,128 @@
             <section class="kss-section kss-section--depth-2" id="kssref-containers-6">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/surf-container/_surf-container.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>src/containers/photo-hexa/_photo-hexa.scss</span>, line <span>1</span></p>
 
               <a class="kss-section__permalink" href="#kssref-containers-6">
                 <h2 class="kss-section__item kss-section__item--depth-2">
                   <span class="kss-section__ref">3.6</span>
-                  <span class="kss-section__name">Surf Container</span>
+                  <span class="kss-section__name">Image Hexa</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Container image with over element
+Example</p>
+<div class="x-grid-row">
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa x-img-hexa-hover">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+   </div>
+ </div>
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+   </div>
+ </div>
+ <div class="x-grid-col-20">
+   <div class="x-img-hexa">
+     <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+   </div>
+ </div>
+</div>
+<pre class="hljs"><code class="language-markup">&lt;div class=&quot;x-img-hexa {{ x-img-hexa-hover }}&quot;&gt; &lt;!-- manual hover effect --&gt;
+   &lt;div class=&quot;x-img-hexa-img&quot;
+        style=&quot;background-image:url(kss-assets/img/banner-vtex.jpg);&quot;&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-containers-7">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/containers/surf-container/_surf-container.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-containers-7">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.7</span>
+                  <span class="kss-section__name">White Surf Container</span>
                 </h2>
               </a>
 
                 <div class="kss-section__description"><p>Example</p>
- <div class="x-surf-cnt">
+ <div class="x-bg-black x-surf-cnt x-surf-cnt-all ">
    <!-- content -->
-   <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
-   <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
-   <h3 class="x-h3"> Nuestros Colaboradores </h3>
-   <div class="x-grid-row">
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
+   <div class="max-width-page">
+     <h2 class="x-h2 x-h-alt"> ¿Quiénes somos? </h1>
+     <p class="x-white-text"> Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+     <h3 class="x-h3"> Nuestros Colaboradores </h3>
+     <div class="x-grid-row">
+       <div class="x-grid-col-20">
+         <div class="x-img-hexa">
+           <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+         </div>
+       </div>
+       <div class="x-grid-col-20">
+         <div class="x-img-hexa">
+           <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+         </div>
+       </div>
+       <div class="x-grid-col-20">
+         <div class="x-img-hexa">
+           <div class="x-img-hexa-img" style="background-image:url(kss-assets/img/banner-vtex.jpg);"></div>
+         </div>
+       </div>
+     </div>
+     <h3 class="x-h3"> Nuestra Cultura </h3>
+     <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
+     <div class="x-grid-row">
+       <div class="x-grid-col-33 x-pd-small">
+         <div class="x-fly-br">
+           <div class="x-fly-br-cnt">
+             <div class="x-img-ovl">
+               <img src="kss-assets/img/banner-vtex.jpg" alt>
+               <div class="x-img-ovl-layer">
+                 <div class="x-tx-lft x-pd-small">
+                   <p> Blog/Ecommerce </p>
+                   <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                   <button class="x-button x-button-white"> ver articulo → </button>
+                 </div>
                </div>
              </div>
            </div>
          </div>
        </div>
-     </div>
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
+       <div class="x-grid-col-33 x-pd-small">
+         <div class="x-fly-br">
+           <div class="x-fly-br-cnt">
+             <div class="x-img-ovl">
+               <img src="kss-assets/img/banner-vtex.jpg" alt>
+               <div class="x-img-ovl-layer">
+                 <div class="x-tx-lft x-pd-small">
+                   <p> Blog/Ecommerce </p>
+                   <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                   <button class="x-button x-button-white"> ver articulo → </button>
+                 </div>
                </div>
              </div>
            </div>
          </div>
        </div>
-     </div>
-     <div class="x-grid-col-33 x-pd-small">
-       <div class="x-fly-br">
-         <div class="x-fly-br-cnt">
-           <div class="x-img-ovl">
-             <img src="kss-assets/img/banner-vtex.jpg" alt>
-             <div class="x-img-ovl-layer">
-               <div class="x-tx-lft x-pd-small">
-                 <p> Blog/Ecommerce </p>
-                 <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
-                 <button class="x-button x-button-white"> ver articulo → </button>
+       <div class="x-grid-col-33 x-pd-small">
+         <div class="x-fly-br">
+           <div class="x-fly-br-cnt">
+             <div class="x-img-ovl">
+               <img src="kss-assets/img/banner-vtex.jpg" alt>
+               <div class="x-img-ovl-layer">
+                 <div class="x-tx-lft x-pd-small">
+                   <p> Blog/Ecommerce </p>
+                   <h4 class="x-mg-small"> ¿Por que eligir VTEX para migrar su eCommerce?</h4>
+                   <button class="x-button x-button-white"> ver articulo → </button>
+                 </div>
                </div>
              </div>
            </div>
@@ -482,19 +552,53 @@
        </div>
      </div>
    </div>
-   <h3 class="x-h3"> Nuestra Cultura </h3>
-   <p class="x-white-text"> Nos encanta trabajar en equipo Somos una apasionada compañía de desarrollo de software basada en equipos motivados y de alto desempeño<p>
    <!-- content -->
- </div>
-<p>Sintaxis</p>
-<pre class="hljs"><code class="language-markup">&lt;div class=&quot;x-surf-cnt&quot;&gt;
-  &lt;!-- Your Content --&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
+ </div></div>
 
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"> <div class="x-surf-cnt [modifier class] x-gradiant-primary">
+   <!-- Your Content -->
+   <h3 class="x-tx-cnt"> Wave [modifier class] </h3>
+ </div></div>
+
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.x-surf-cnt-top</h2>
+                    <p class="kss-modifiers__description">Top Wave</p>
+                    <div class="kss-modifiers__example"> <div class="x-surf-cnt x-surf-cnt-top x-gradiant-primary">
+   <!-- Your Content -->
+   <h3 class="x-tx-cnt"> Wave x-surf-cnt-top </h3>
+ </div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.x-surf-cnt-bottom</h2>
+                    <p class="kss-modifiers__description">Bottom Wave</p>
+                    <div class="kss-modifiers__example"> <div class="x-surf-cnt x-surf-cnt-bottom x-gradiant-primary">
+   <!-- Your Content -->
+   <h3 class="x-tx-cnt"> Wave x-surf-cnt-bottom </h3>
+ </div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.x-surf-cnt-all</h2>
+                    <p class="kss-modifiers__description">All Wave</p>
+                    <div class="kss-modifiers__example"> <div class="x-surf-cnt x-surf-cnt-all x-gradiant-primary">
+   <!-- Your Content -->
+   <h3 class="x-tx-cnt"> Wave x-surf-cnt-all </h3>
+ </div></div>
+                  </article>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup"> &lt;div class&#x3D;&quot;x-surf-cnt [modifier class] x-gradiant-primary&quot;&gt;
+   &lt;!-- Your Content --&gt;
+   &lt;h3 class&#x3D;&quot;x-tx-cnt&quot;&gt; Wave [modifier class] &lt;/h3&gt;
+ &lt;/div&gt;</code></pre>
+                </article>
 
             </section>
     </section>

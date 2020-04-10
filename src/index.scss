@@ -1,6 +1,5 @@
 @import './components/components.scss';
 @import './layout/layouts';
-@import './themes/experimentality/theme.scss';
 @import './commons/commons.scss';
 @import './containers/containers.scss';
 @import './paragraphs/paragraphs.scss';
@@ -22,8 +21,6 @@
 
 // Components
 //
-// Button styles can be applied to anything with the `.btn` class applied.
-// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 //
 // Styleguide Components
 
@@ -32,3 +29,5 @@
 //
 //
 // Styleguide Brandlines
+
+@import './themes/experimentality/theme.scss';

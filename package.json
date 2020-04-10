@@ -7,7 +7,7 @@
     "start": "npm run sass & npm run watch & npm run link",
     "build": "sass --no-source-map --style compressed ./src:./dist",
     "kss": "kss --config kss-config.json",
-    "sass": "sass --watch --no-source-map ./src:./styleguide/exp-ui",
+    "sass": "sass --watch --no-source-map --style compressed ./src:./styleguide/exp-ui",
     "link": "live-server ./styleguide",
     "watch": "onchange -v './src/**/*' -- npm run kss"
   },
