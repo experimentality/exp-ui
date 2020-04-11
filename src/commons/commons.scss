@@ -1,5 +1,3 @@
-
-
 /*
 
 Commons Styles
@@ -10,90 +8,186 @@ Styleguide 2Commons
 
 */
 
+/*
 
+Sizes REM
 
-// borders
-.x-br-1{
-  border: 1px solid rgba(0,0,0,0.5);
+Use relative measures `rem` class nomenclature
+Example 
+<div class="x-hg-5r x-wd-5r x-br-1">
+</div>
+<div class="x-hg-4r x-wd-7r x-br-1">
+</div>
+
+```markup
+<div class="x-hg-5r x-wd-5r ">
+</div>
+<div class="x-hg-4r x-wd-7r ">
+</div>
+```
+
+Styleguide 2Commons.1SizesREM
+
+*/
+
+// relative sizes
+$REMSizes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+@each $size in $REMSizes {
+  .x-hg-#{$size}r {
+    height: $size * 1rem;
+  }
+  .x-wd-#{$size}r {
+    width: $size * 1rem;
+  }
 }
-.x-br-rd-small{
-  border-radius: .5rem;
+
+/*
+
+Sizes Width Procentual
+
+Use relative measures `%` class nomenclature 
+20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80
+
+`x-wd-20`
+<div class="x-hg-5r x-wd-20 x-br-1">
+</div>
+
+`x-wd-25`
+<div class="x-hg-5r x-wd-25 x-br-1">
+</div>
+
+`x-wd-30`
+<div class="x-hg-5r x-wd-30 x-br-1">
+</div>
+
+`x-wd-33`
+<div class="x-hg-5r x-wd-33 x-br-1">
+</div>
+
+`x-wd-40`
+<div class="x-hg-5r x-wd-40 x-br-1">
+</div>
+
+`x-wd-50`
+<div class="x-hg-5r x-wd-50 x-br-1">
+</div>
+
+`x-wd-60`
+<div class="x-hg-5r x-wd-60 x-br-1">
+</div>
+
+`x-wd-66`
+<div class="x-hg-5r x-wd-66 x-br-1">
+</div>
+
+`x-wd-70`
+<div class="x-hg-5r x-wd-70 x-br-1">
+</div>
+
+`x-wd-75`
+<div class="x-hg-4r x-wd-75 x-br-1">
+</div>
+
+`x-wd-80`
+<div class="x-hg-4r x-wd-80 x-br-1">
+</div>
+
+```markup
+<div class="x-wd-80 "> <!-- x-wd-{{porcent}} -->
+</div>
+```
+
+Styleguide 2Commons.2SizesPorcentual
+
+*/
+$PORCSizes: 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80;
+@each $size in $PORCSizes {
+  .x-wd-#{$size} {
+    width: $size * 1%;
+  }
 }
-.x-br-dott{
+
+/*
+
+Borders
+
+Border Solid 1 Pixel `x-br-1`
+<div class="x-hg-5r x-br-1"></div>
+
+```markup
+<div class="x-hg-5r x-br-1"></div>
+```
+
+Border radius small `x-br-rd-small`
+<div class="x-hg-5r x-br-1 x-br-rd-small "></div>
+
+```markup
+<div class="x-hg-5r x-br-1 x-br-rd-small "></div>
+```
+
+Borxer dotted `x-br-dott`
+<div class="x-hg-5r x-br-1 x-br-rd-small x-br-dott"></div>
+
+```markup
+<div class="x-hg-5r x-br-1 x-br-rd-small x-br-dott"></div>
+```
+
+Styleguide 2Commons.3Borders
+
+*/
+.x-br-1 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.x-br-rd-small {
+  border-radius: 0.5rem;
+}
+.x-br-dott {
   border-style: dotted;
 }
 
 // paddings
-.x-pd-small{
-  padding: .5rem;
+.x-pd-small {
+  padding: 0.5rem;
 }
-.x-pd-card{
-  padding: 1.2rem .5rem;
+.x-pd-card {
+  padding: 1.2rem 0.5rem;
 }
-
 
 // Margins
-.x-mg-small{
-  margin: .5rem;
+.x-mg-small {
+  margin: 0.5rem;
 }
-.x-mg-card{
-  margin: 1.2rem .5rem;
+.x-mg-card {
+  margin: 1.2rem 0.5rem;
 }
-
-
 
 // backgrounds
-.x-bg-overlay{
+.x-bg-overlay {
   // styles of theme
 }
-.x-bg-black{
+.x-bg-black {
   // styles of theme
 }
-.x-bg-primary{
+.x-bg-primary {
   // styles of theme
 }
-.x-bg-secondary{
+.x-bg-secondary {
   // styles of theme
 }
 
 // Color Text
-p.x-white-text, div.x-white-text, article.x-white-text{
-  color: #FFF;
+p.x-white-text,
+div.x-white-text,
+article.x-white-text {
+  color: #fff;
 }
-p.x-bg-primary, div.x-bg-primary, article.x-bg-primary{
+p.x-bg-primary,
+div.x-bg-primary,
+article.x-bg-primary {
   // styles of theme
 }
-p.x-bg-secondary, div.x-bg-secondary, article.x-bg-secondary{
+p.x-bg-secondary,
+div.x-bg-secondary,
+article.x-bg-secondary {
   // styles of theme
-}
-
-// Static sizes
-.x-hg-5r{
-  height: 5rem;
-}
-.x-hg-6r{
-  height: 6rem;
-}
-.x-hg-7r{
-  height: 7rem;
-}
-.x-hg-8r{
-  height: 8rem;
-}
-
-// Static sizes
-.x-wd-5r{
-  width: 5rem;
-}
-.x-wd-6r{
-  width: 6rem;
-}
-.x-wd-7r{
-  width: 7rem;
-}
-.x-wd-8r{
-  width: 8rem;
-}
-.x-wd-50{
-  width: 50%;
 }
