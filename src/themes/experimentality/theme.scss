@@ -8,7 +8,6 @@
 //  @import '@experimentality/exp-ui/dist/theme/experimentality';
 // ```
 //
-//
 // Styleguide Brandlines.1
 
 
@@ -144,4 +143,8 @@ p.x-bg-secondary, div.x-bg-secondary, article.x-bg-secondary{
 .x-gradiant-secondary{
   background: rgb(30,30,30);
   background: linear-gradient(90deg, rgba(30,30,30,1) 0%, rgba(0,98,98,1) 50%, rgba(30,30,30,1) 100%);
+}
+
+.x-input-radio:checked, .x-input-check:checked{
+  background-color: $secondary;
 }

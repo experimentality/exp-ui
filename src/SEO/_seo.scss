@@ -1,0 +1,207 @@
+/*
+ SEO
+
+ Styleguide SEO
+ */
+
+ /*
+ Search Engine Optimization
+
+ **Search Engine Optimization** is the process of increasing the quality and quantity of 
+ website traffic by increasing the visibility of a website or a web page to users of a web search engine.
+
+ Styleguide SEO.1
+ */
+
+/*
+ METAs
+
+ Metadata is data (information) about data. The `<meta>` tag provides metadata about the HTML 
+ document. Metadata will not be displayed on the page, but will be machine parsable. 
+ Meta elements are typically used to specify page description, keywords, author of 
+ the document, last modified, and other metadata.
+ ```markup
+<head>
+    <meta charset="UTF-8">
+    <title> Title of Page </title>
+    <meta name="description" content="Short description, maximum 150 characters">
+    <meta name="keywords" content="words,palabra,key"> <!-- separated by commas -->
+    <meta name="author" content="Experimentality"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsibe meta -->
+</head>
+ ```
+
+ Styleguide SEO.2
+*/
+
+/*
+ Open Graph protocol
+
+ The Open Graph protocol enables any web page to become a rich object in a social graph. 
+ For instance, this is used on Facebook to allow any web page to have the same 
+ functionality as any other object on Facebook.
+ ```markup
+  <meta property="og:title" content="Title of Page" />
+   <meta property="og:description" content="Short description, maximum 150 characters" />
+   <meta property="og:title" content="Title of Page" />
+   <meta property="og:image:url" content="http://ia.media-imdb.com/images/rock.jpg" />
+   <meta property="og:image:type " content="image/jpeg" />
+   <meta property="og:image:width" content="400" /> <!-- optional -->
+   <meta property="og:image:height" content="300" /> <!-- optional -->
+ ```
+ ![Whatsapp](https://www.castilloandres.com/images/blog/structured-data/whatsapp-open-graph.png)
+ **Documentation:** [https://ogp.me/](https://ogp.me/)
+
+ Styleguide SEO.3
+*/
+
+/*
+ Titles Manage
+
+ The **H1** tag is typically the largest and most important tag on an individual page of a website. 
+ It may be used to introduce the content of that page as a whole—that is, to name the topic at 
+ hand—or to simply reflect the name of the page itself. **You should not use more than one H1 on the same page**
+
+
+ Styleguide SEO.4
+*/
+
+/*
+ Images ALT
+
+  The alt attribute will accept any text string, but there are certain best practices that will help.
+    * No special characters. This includes UTF-8 characters such as unencoded curly quotes, as well as HTML Character Entities.
+    * No HTML.
+    * No more than 125 characters.
+    * Just identify the picture. No need to refer to it (“This is a picture of…”).
+  ```markup
+    <img src="logo.jpg" alt="Experimentality" />
+  ```
+
+ Styleguide SEO.5
+*/
+
+/*
+ URLs
+
+ **SEO friendly URLs*** are URLs that are designed to meet the needs of users and searchers. 
+ Specifically, URLs optimized for SEO tend to be **short and keyword-rich**.
+ Along with your title tag, link anchor text, and the content itself, search engines 
+ use your webpage’s URL to **understand what your content is** all about.
+
+ <b style="color:red">Bad</b>
+ ```
+  https://mysite.com/post/0001
+ ```
+ <b style="color:green">Good</b>
+ ```
+  https://mysite.com/post/seo-and-friendly-url
+ ```
+
+ Styleguide SEO.6
+*/
+
+/*
+ SiteMaps
+
+ The Sitemaps protocol allows a webmaster to inform search engines about 
+ URLs on a website that are available for crawling. A Sitemap is an XML 
+ file that lists the URLs for a site.
+```markup
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.example.net/?id=who</loc>
+    <lastmod>2009-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.example.net/?id=what</loc>
+    <lastmod>2009-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.example.net/?id=how</loc>
+    <lastmod>2009-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
+```
+
+ Styleguide SEO.7
+*/
+
+/*
+ Accesibility
+
+ Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways 
+ to make web content and web applications (especially those developed with JavaScript) 
+ more accessible to people with disabilities.
+
+ Styleguide SEO.8
+*/
+
+/*
+ Role & attributes
+
+ Web developers MAY use the ARIA `role` and `aria-*` attributes on HTML elements, 
+ in accordance with the requirements described in [wai-aria-1.1], except where these conflict 
+ with the strong native semantics or are equal to the implicit ARIA semantics of a given HTML 
+ element. These constraints are intended to prevent developers from making assistive technology 
+ products report nonsensical user interface (UI) information that does not represent the actual 
+ UI of the document.
+
+ # Role
+
+ The Role Attribute defined in this specification allows the author to annotate markup languages 
+ with machine-extractable semantic information about the purpose of an element. Use cases 
+ include accessibility, device adaptation, server-side processing, and complex data description.
+ [Documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+```markup
+<div role="main">
+    <h1>This is the main content of the page</h1>
+    <p>Here is some content that is the primary purpose of this web page.</p>
+</div>
+```
+
+ # States and properties
+
+ Can be applied to elements and are used together to support ARIA roles 
+ existing on a page. States can change on their own or with user interaction 
+ (i.e. aria-checked and aria-disabled), usually with JavaScript. Properties rarely 
+ change once they’re set (i.e. aria-labelledby and aria-describedby).
+ [Documentation](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties)
+```markup
+  <a aria-label='Read More about how awesome Lullabot is'
+    href='/path/to/your/page'>
+    Read More
+  </a>
+  <button id='menu-button-1' 
+          aria-haspopup='true' 
+          aria-controls='menu-list-1'>
+    Menu List 1
+  </button>
+```
+
+```javascript
+// Find the progress bar <div> in the DOM.
+ var progressBar = document.getElementById("percent-loaded");
+
+// Set its ARIA roles and states, 
+// so that assistive technologies know what kind of widget it is.
+ progressBar.setAttribute("role", "progressbar");
+ progressBar.setAttribute("aria-valuemin", 0);
+ progressBar.setAttribute("aria-valuemax", 100);
+
+// Create a function that can be called at any time to update 
+// the value of the progress bar.
+ function updateProgress(percentComplete) {
+   progressBar.setAttribute("aria-valuenow", percentComplete);
+ }
+```
+
+ Styleguide SEO.8
+*/

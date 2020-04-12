@@ -13,16 +13,50 @@ Styleguide 2Commons
 Sizes REM
 
 Use relative measures `rem` class nomenclature
-Example 
-<div class="x-hg-5r x-wd-5r x-br-1">
-</div>
-<div class="x-hg-4r x-wd-7r x-br-1">
+
+`x-hg-1r` `x-wd-1r`
+<div class="x-hg-1r x-wd-1r x-br-1">
 </div>
 
-```markup
-<div class="x-hg-5r x-wd-5r ">
+`x-hg-2r` `x-wd-2r`
+<div class="x-hg-2r x-wd-2r x-br-1">
 </div>
-<div class="x-hg-4r x-wd-7r ">
+
+`x-hg-3r` `x-wd-3r`
+<div class="x-hg-3r x-wd-3r x-br-1">
+</div>
+
+`x-hg-4r` `x-wd-4r`
+<div class="x-hg-4r x-wd-4r x-br-1">
+</div>
+
+`x-hg-5r` `x-wd-5r`
+<div class="x-hg-5r x-wd-5r x-br-1">
+</div>
+
+`x-hg-6r` `x-wd-6r`
+<div class="x-hg-6r x-wd-6r x-br-1">
+</div>
+
+`x-hg-7r` `x-wd-7r`
+<div class="x-hg-7r x-wd-7r x-br-1">
+</div>
+
+`x-hg-8r` `x-wd-8r`
+<div class="x-hg-8r x-wd-8r x-br-1">
+</div>
+
+`x-hg-9r` `x-wd-9r`
+<div class="x-hg-9r x-wd-9r x-br-1">
+</div>
+
+`x-hg-10r` `x-wd-10r`
+<div class="x-hg-10r x-wd-10r x-br-1">
+</div>
+
+
+```markup
+<div class="x-hg-5r x-wd-5r"> <!-- x-hg-{{rem}}r --> <!-- x-wd-{{rem}}r -->
 </div>
 ```
 
@@ -49,47 +83,47 @@ Use relative measures `%` class nomenclature
 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80
 
 `x-wd-20`
-<div class="x-hg-5r x-wd-20 x-br-1">
+<div class="x-hg-3r x-wd-20 x-br-1">
 </div>
 
 `x-wd-25`
-<div class="x-hg-5r x-wd-25 x-br-1">
+<div class="x-hg-3r x-wd-25 x-br-1">
 </div>
 
 `x-wd-30`
-<div class="x-hg-5r x-wd-30 x-br-1">
+<div class="x-hg-3r x-wd-30 x-br-1">
 </div>
 
 `x-wd-33`
-<div class="x-hg-5r x-wd-33 x-br-1">
+<div class="x-hg-3r x-wd-33 x-br-1">
 </div>
 
 `x-wd-40`
-<div class="x-hg-5r x-wd-40 x-br-1">
+<div class="x-hg-3r x-wd-40 x-br-1">
 </div>
 
 `x-wd-50`
-<div class="x-hg-5r x-wd-50 x-br-1">
+<div class="x-hg-3r x-wd-50 x-br-1">
 </div>
 
 `x-wd-60`
-<div class="x-hg-5r x-wd-60 x-br-1">
+<div class="x-hg-3r x-wd-60 x-br-1">
 </div>
 
 `x-wd-66`
-<div class="x-hg-5r x-wd-66 x-br-1">
+<div class="x-hg-3r x-wd-66 x-br-1">
 </div>
 
 `x-wd-70`
-<div class="x-hg-5r x-wd-70 x-br-1">
+<div class="x-hg-3r x-wd-70 x-br-1">
 </div>
 
 `x-wd-75`
-<div class="x-hg-4r x-wd-75 x-br-1">
+<div class="x-hg-3r x-wd-75 x-br-1">
 </div>
 
 `x-wd-80`
-<div class="x-hg-4r x-wd-80 x-br-1">
+<div class="x-hg-3r x-wd-80 x-br-1">
 </div>
 
 ```markup

@@ -102,14 +102,55 @@
 
     <!-- documentation. -->
     <section class="kss-documentation">
-        <article class="kss-markdown">
-          <h1>Experimentality UI</h1>
-<article class="kss-section__content">
-  <h3> Open Source CSS Styleguide </h3>
-  <p> CSS framework, User Interface of Experimentality </p>
-</article>
 
-        </article>
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-seo-7">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>src/SEO/_seo.scss</span>, line <span>104</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-seo-7">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">9.7</span>
+                  <span class="kss-section__name">SiteMaps</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The Sitemaps protocol allows a webmaster to inform search engines about
+URLs on a website that are available for crawling. A Sitemap is an XML
+file that lists the URLs for a site.</p>
+<pre class="hljs"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;
+ &lt;url&gt;
+   &lt;loc&gt;http://www.example.net/?id=who&lt;/loc&gt;
+   &lt;lastmod&gt;2009-09-22&lt;/lastmod&gt;
+   &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+   &lt;priority&gt;0.8&lt;/priority&gt;
+ &lt;/url&gt;
+ &lt;url&gt;
+   &lt;loc&gt;http://www.example.net/?id=what&lt;/loc&gt;
+   &lt;lastmod&gt;2009-09-22&lt;/lastmod&gt;
+   &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+   &lt;priority&gt;0.5&lt;/priority&gt;
+ &lt;/url&gt;
+ &lt;url&gt;
+   &lt;loc&gt;http://www.example.net/?id=how&lt;/loc&gt;
+   &lt;lastmod&gt;2009-09-22&lt;/lastmod&gt;
+   &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+   &lt;priority&gt;0.5&lt;/priority&gt;
+ &lt;/url&gt;
+&lt;/urlset&gt;
+</code></pre>
+</div>
+
+            </article>
+
+
+            </header>
     </section>
     <!-- /documentation. -->
 

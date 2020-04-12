@@ -108,36 +108,69 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-containers-1">
+            <header class="kss-section kss-section--depth-2" id="kssref-seo-8">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>src/containers/morphcard/_morphcard.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>src/SEO/_seo.scss</span>, line <span>147</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-containers-1">
+              <a class="kss-section__permalink" href="#kssref-seo-8">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">6.1</span>
-                  <span class="kss-section__name">Morph Card</span>
+                  <span class="kss-section__ref">9.8</span>
+                  <span class="kss-section__name">Role &amp; attributes</span>
                 </h2>
               </a>
 
+                <div class="kss-section__description"><p>Web developers MAY use the ARIA <code>role</code> and <code>aria-*</code> attributes on HTML elements,
+in accordance with the requirements described in [wai-aria-1.1], except where these conflict
+with the strong native semantics or are equal to the implicit ARIA semantics of a given HTML
+element. These constraints are intended to prevent developers from making assistive technology
+products report nonsensical user interface (UI) information that does not represent the actual
+UI of the document.</p>
+<h1>Role</h1>
+<p>The Role Attribute defined in this specification allows the author to annotate markup languages
+with machine-extractable semantic information about the purpose of an element. Use cases
+include accessibility, device adaptation, server-side processing, and complex data description.
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles">Documentation</a></p>
+<pre class="hljs"><code class="language-markup">&lt;div role=&quot;main&quot;&gt;
+   &lt;h1&gt;This is the main content of the page&lt;/h1&gt;
+   &lt;p&gt;Here is some content that is the primary purpose of this web page.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h1>States and properties</h1>
+<p>Can be applied to elements and are used together to support ARIA roles
+existing on a page. States can change on their own or with user interaction
+(i.e. aria-checked and aria-disabled), usually with JavaScript. Properties rarely
+change once they’re set (i.e. aria-labelledby and aria-describedby).
+<a href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties">Documentation</a></p>
+<pre class="hljs"><code class="language-markup"> &lt;a aria-label='Read More about how awesome Lullabot is'
+   href='/path/to/your/page'&gt;
+   Read More
+ &lt;/a&gt;
+ &lt;button id='menu-button-1'
+         aria-haspopup='true'
+         aria-controls='menu-list-1'&gt;
+   Menu List 1
+ &lt;/button&gt;
+</code></pre>
+<pre class="hljs"><code class="language-javascript"><span class="hljs-comment">// Find the progress bar &lt;div&gt; in the DOM.</span>
+<span class="hljs-keyword">var</span> progressBar = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"percent-loaded"</span>);
+
+<span class="hljs-comment">// Set its ARIA roles and states,</span>
+<span class="hljs-comment">// so that assistive technologies know what kind of widget it is.</span>
+progressBar.setAttribute(<span class="hljs-string">"role"</span>, <span class="hljs-string">"progressbar"</span>);
+progressBar.setAttribute(<span class="hljs-string">"aria-valuemin"</span>, <span class="hljs-number">0</span>);
+progressBar.setAttribute(<span class="hljs-string">"aria-valuemax"</span>, <span class="hljs-number">100</span>);
+
+<span class="hljs-comment">// Create a function that can be called at any time to update</span>
+<span class="hljs-comment">// the value of the progress bar.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateProgress</span>(<span class="hljs-params">percentComplete</span>) </span>{
+  progressBar.setAttribute(<span class="hljs-string">"aria-valuenow"</span>, percentComplete);
+}
+</code></pre>
+</div>
 
             </article>
 
-              <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Example</h1>
-
-
-                <div class="kss-modifiers__example"><div class="x-card-morph">
- <h3 class="x-tx-cnt"> Card </h3>
-</div></div>
-
-              </article>
-
-                <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;x-card-morph&quot;&gt;
- &lt;h3 class&#x3D;&quot;x-tx-cnt&quot;&gt; Card &lt;/h3&gt;
-&lt;/div&gt;</code></pre>
-                </article>
 
             </header>
     </section>
